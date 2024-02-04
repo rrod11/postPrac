@@ -94,18 +94,3 @@ class Solution:
 
         _backtrack(0)
         return ans
-
-// O(n^2) quadratic time
-// O(n) linear space
-function firstAnagram(str1, str2) {
-  let arr1 = str1.split(""),
-    arr2 = str2.split("");
-
-  for (let letter of arr1) {
-    let index = arr2.indexOf(letter);
-    if (index === -1) return false;
-    arr2.splice(index, 1);
-  }
-
-  return !arr2.length;
-}
