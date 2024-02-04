@@ -59,3 +59,16 @@ function bonusAnagram(str1, str2) {
   // It's a zero-sum game!
   return Object.values(letterSums).every((sum) => sum === 0);
 }
+// O(n^2) time
+// O(1) space
+function quadraticBiggestFish(fishes) {
+  for (let i = 0; i < fishes.length; i++) {
+    let fish1 = fishes[i];
+    let maxLength = true;
+    for (let j = i; j < fishes.length; j++) {
+      let fish2 = fishes[j];
+      if (fish2.length > fish1.length) maxLength = false;
+    }
+    if (maxLength) return fish1;
+  }
+}
