@@ -45,3 +45,17 @@ function thirdAnagram(str1, str2) {
   };
   return haveSameCount(letterCounts1, letterCounts2);
 }
+
+// O(n) linear time
+// O(1) constant space (same logic as above)
+function bonusAnagram(str1, str2) {
+  let letterSums = {};
+
+  // If we do the exact same subractions for each letter in
+  // str2 as we do additions for str1, letter_sums will all be 0.
+  str1.split("").forEach((e) => (letterSums[e] = (letterSums[e] || 0) + 1));
+  str2.split("").forEach((e) => (letterSums[e] = (letterSums[e] || 0) - 1));
+
+  // It's a zero-sum game!
+  return Object.values(letterSums).every((sum) => sum === 0);
+}
