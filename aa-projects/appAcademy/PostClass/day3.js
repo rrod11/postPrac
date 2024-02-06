@@ -112,3 +112,21 @@ function slowDance(direction, tilesArray) {
     if (tile == direction) return i;
   }
 }
+
+// constant octopus dance
+//use an object for constant lookup
+// O(1) time
+const tilesObj = {
+  up: 0,
+  "right-up": 1,
+  right: 2,
+  "right-down": 3,
+  down: 4,
+  "left-down": 5,
+  left: 6,
+  "left-up": 7,
+};
+
+function fastDance(direction, tilesObj) {
+  return tilesObj[direction];
+}
