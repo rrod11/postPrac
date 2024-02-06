@@ -92,3 +92,23 @@ function linearBiggestFish(fishes) {
 
   return biggestFish;
 }
+
+// linear octopus dance
+// O(n) time
+const tilesArray = [
+  "up",
+  "right-up",
+  "right",
+  "right-down",
+  "down",
+  "left-down",
+  "left",
+  "left-up",
+];
+
+function slowDance(direction, tilesArray) {
+  for (let i = 0; i < tilesArray.length; i++) {
+    let tile = tilesArray[i];
+    if (tile == direction) return i;
+  }
+}
