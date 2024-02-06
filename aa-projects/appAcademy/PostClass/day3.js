@@ -81,3 +81,14 @@ function nlognBiggestFish(fishes) {
   //return the first element
   return fishes[0];
 }
+// O(n) time
+// O(1) space
+function linearBiggestFish(fishes) {
+  let biggestFish = fishes[0];
+
+  for (let fish of fishes) {
+    if (fish.length > biggestFish.length) biggestFish = fish;
+  }
+
+  return biggestFish;
+}
