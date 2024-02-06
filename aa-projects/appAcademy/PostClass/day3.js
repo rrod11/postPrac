@@ -72,3 +72,12 @@ function quadraticBiggestFish(fishes) {
     if (maxLength) return fish1;
   }
 }
+
+// O(n log n) time
+// O(1) space
+function nlognBiggestFish(fishes) {
+  // sort the array longest to shortest
+  fishes.sort((a, b) => b.length - a.length);
+  //return the first element
+  return fishes[0];
+}
