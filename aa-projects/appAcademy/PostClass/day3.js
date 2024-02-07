@@ -141,3 +141,24 @@ function badTwoSum(arr, targetSum) {
   }
   return false;
 }
+
+//O(nlogn) linearithmic time
+//O(n) linear space
+function okayTwoSum1(arr, targetSum) {
+  arr.sort();
+  let i = 0,
+    j = arr.length - 1;
+
+  while (i < j) {
+    let currentSum = arr[i] + arr[j];
+    if (currentSum > targetSum) {
+      j -= 1;
+    } else if (currentSum < targetSum) {
+      i += 1;
+    } else {
+      return true;
+    }
+  }
+
+  return false;
+}
