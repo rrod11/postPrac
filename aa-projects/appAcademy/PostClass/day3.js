@@ -130,3 +130,14 @@ const tilesObj = {
 function fastDance(direction, tilesObj) {
   return tilesObj[direction];
 }
+
+//O(n^2) quadratic time
+//O(1) constant space
+function badTwoSum(arr, targetSum) {
+  for (let i = 0; i < arr.length - 1; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[i] + arr[j] === targetSum) return true;
+    }
+  }
+  return false;
+}
