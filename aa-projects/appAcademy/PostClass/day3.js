@@ -179,3 +179,21 @@ function okayTwoSum2(arr, targetSum) {
 
   return false;
 }
+function binarySearch(array, target) {
+  let lowerIdx = 0,
+    upperIdx = array.length - 1,
+    midIdx;
+
+  while (lowerIdx <= upperIdx) {
+    midIdx = Math.floor((lowerIdx + upperIdx) / 2);
+    if (array[midIdx] < target) {
+      lowerIdx = midIdx + 1;
+    } else if (array[midIdx] > target) {
+      upperIdx = midIdx - 1;
+    } else {
+      return midIdx;
+    }
+  }
+
+  return -1;
+}
