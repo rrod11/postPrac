@@ -197,3 +197,15 @@ function binarySearch(array, target) {
 
   return -1;
 }
+//O(n) linear time
+//O(n) linear space
+function twoSum(arr, targetSum) {
+  let complements = {};
+  for (let num of arr) {
+    let complement = targetSum - num;
+    if (complements[complement]) return true;
+    complements[num] = true;
+  }
+
+  return false;
+}
