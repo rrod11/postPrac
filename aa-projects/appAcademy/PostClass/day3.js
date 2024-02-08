@@ -162,3 +162,20 @@ function okayTwoSum1(arr, targetSum) {
 
   return false;
 }
+
+//O(nlogn) linearithmic time
+//O(n) linear space
+// another implementation using binary search
+function okayTwoSum2(arr, targetSum) {
+  arr.sort();
+  for (let i = 0; i < arr.length; i++) {
+    let num = arr[i];
+    let complement = targetSum - num;
+    let complement_idx = binarySearch(arr, complement);
+    if (complement_idx != -1 && complement_idx != i) {
+      return true;
+    }
+  }
+
+  return false;
+}
