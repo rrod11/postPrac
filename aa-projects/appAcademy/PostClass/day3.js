@@ -226,3 +226,19 @@ function twoSumIndices(arr, targetSum) {
   }
   return [];
 }
+
+//O(n^2) quadratic time
+//O(n) linear space
+function myMin1a(list) {
+  let minNum = null;
+
+  for (let num1 of list) {
+    dupList = list.slice();
+    dupList = dupList.filter((item) => item !== num1);
+    if (dupList.every((item) => item > num1)) {
+      minNum = num1;
+    }
+  }
+
+  return minNum;
+}
