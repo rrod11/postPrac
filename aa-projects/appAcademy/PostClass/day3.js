@@ -209,3 +209,20 @@ function twoSum(arr, targetSum) {
 
   return false;
 }
+
+//O(n) linear time
+//O(n) linear space
+// This can be easily adapted to also return the indices of the two numbers:
+function twoSumIndices(arr, targetSum) {
+  let complements = {};
+  for (let i = 0; i < arr.length; i++) {
+    let num = arr[i];
+    let complement = targetSum - num;
+    if (complements[complement]) {
+      let complement_idx = complements[complement];
+      return [i, complement_idx];
+    }
+    complements[num] = i;
+  }
+  return [];
+}
