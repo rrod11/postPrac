@@ -242,3 +242,18 @@ function myMin1a(list) {
 
   return minNum;
 }
+
+//O(n^2) quadratic time
+//O(1) constant space
+function myMin1b(list) {
+  for (let i = 0; i < list.length; i++) {
+    let num1 = list[i];
+    let min = true;
+    for (let j = 0; j < list.length; j++) {
+      let num2 = list[j];
+      if (i === j) continue;
+      if (num2 < num1) min = false;
+    }
+    if (min) return num1;
+  }
+}
