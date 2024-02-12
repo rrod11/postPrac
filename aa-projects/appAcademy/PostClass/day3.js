@@ -257,3 +257,15 @@ function myMin1b(list) {
     if (min) return num1;
   }
 }
+
+//O(n) linear time
+//O(1) constant space
+function myMin2(list) {
+  let minNum = list[0];
+
+  list.forEach(function (num) {
+    if (num < minNum) minNum = num;
+  });
+
+  return minNum;
+}
