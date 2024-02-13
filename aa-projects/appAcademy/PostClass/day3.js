@@ -269,3 +269,21 @@ function myMin2(list) {
 
   return minNum;
 }
+
+//O(n^3) cubic time
+//O(n^3) cubic space
+function largestContiguousSubsum1(array) {
+  let subArrays = [];
+
+  for (let i = 0; i < array.length; i++) {
+    for (let j = i; j < array.length; j++) {
+      subArrays.push(array.slice(i, j + 1));
+    }
+  }
+
+  let sumOfArrays = [];
+  for (let elt of subArrays) {
+    sumOfArrays.push(elt.reduce((a, b) => a + b));
+  }
+  return Math.max(...sumOfArrays);
+}
