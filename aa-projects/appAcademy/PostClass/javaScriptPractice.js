@@ -11,3 +11,18 @@ function iterateThroughWord(word) {
 }
 
 console.log(iterateThroughWord("umbrella"));
+
+///// REVERSING A STRING
+/// reverse a name
+function reverseName(name) {
+  let res = "";
+  for (let i = name.length - 1; i >= 0; i--) {
+    let letter = name[i];
+    console.log("i", i, "letter", letter);
+    res += letter;
+    console.log(res);
+  }
+  return res;
+}
+
+console.log(reverseName("RODERICK"));
