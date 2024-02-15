@@ -26,3 +26,33 @@ function reverseName(name) {
 }
 
 console.log(reverseName("RODERICK"));
+
+function pigLatinWord(word) {
+  let vowels = "aeiou";
+  if (vowels.includes(word[0])) {
+    return word + "yay";
+  }
+  for (let i = 0; i < word.length; i++) {
+    let letter = word[i];
+    if (vowels.includes(letter)) {
+      let first = word.slice(i);
+      let second = word.slice(0, i);
+      return first + second + "ay";
+    }
+  }
+}
+
+function pigLatinWord(word) {
+  let vowels = "aeiou";
+  if (vowels.includes(word[0])) {
+    return word + "yay";
+  }
+  for (let i = 0; i < word.length; i++) {
+    let letter = word[i];
+    if (vowels.includes(letter)) {
+      let firstPart = word.slice(i);
+      let secondPart = word.slice(0, i);
+      return firstPart + secondPart + "ay";
+    }
+  }
+}
