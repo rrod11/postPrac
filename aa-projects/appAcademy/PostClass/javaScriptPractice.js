@@ -56,3 +56,22 @@ function pigLatinWord(word) {
     }
   }
 }
+
+// hard coding the ATM example
+
+let balance = 10;
+// let balance = 20; // causes an error because balance is already defined
+// balance = 20; // changes the value
+
+//main function - the atm itself
+function ATM(transaction, amount) {
+  if (transaction === "Check Balance") {
+    return checkBalance(balance);
+  } else if (transaction === "Withdraw") {
+    return (balance = withdraw(balance, amount));
+  } else if (transaction === "Deposit") {
+    return (balance = deposit(balance, amount));
+  } else {
+    console.log("Thats not it chief");
+  }
+}
