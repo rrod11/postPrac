@@ -1,0 +1,60 @@
+// MAIN FUNCTIONS
+
+let calculator = function (operation, num1, num2) {
+  if (operation === "addition") {
+    console.log(num1 + num2); // unnecessary but allows you to call calculator function and get a return
+    return addition(num1, num2);
+  } else if (operation === "subtraction") {
+    return subtraction(num1, num2);
+  } else if (operation === "multiplication") {
+    return multiplication(num1, num2);
+  } else if (operation === "division") return division(num1, num2);
+  // showing that we dont need to use curlies but they help you see code
+  else {
+    return "thats out my scope of function babbbyyyyyy";
+  }
+};
+// console.log(addition(1, 2));
+// HELPER FUNCTIONS
+
+function addition(num1, num2) {
+  return num1 + num2;
+}
+
+function subtraction(num1, num2) {
+  return num1 - num2;
+}
+
+function multiplication(num1, num2) {
+  return num1 * num2;
+}
+function division(num1, num2) {
+  return num1 / num2;
+}
+
+console.log(calculator("subtraction", 3, 5));
+console.log(calculator("division", "brown", 5));
+
+// let twoDimensionalSum = function (arr) {
+//   let sum = 0;
+
+//   for (let i = 0; i < arr.length; i++) {
+//     let subArr = arr[i];
+
+//     for (let j = 0; j < subArr.length; j++) {
+//       sum += subArr[j];
+//     }
+//   }
+
+//   return sum;
+// };
+function twoDimensionalSum(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    let subArr[i];
+    for (let j = 0; j < arr.length; j++) {
+      sum += subArr[j];
+    }
+  }
+  return sum;
+};
