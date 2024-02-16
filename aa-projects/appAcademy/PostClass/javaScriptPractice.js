@@ -75,3 +75,35 @@ function ATM(transaction, amount) {
     console.log("Thats not it chief");
   }
 }
+
+function withdraw(initialBalance, requestedAmount) {
+  if (requestedAmount > initialBalance) {
+    console.log("insufficient Funds");
+  } else {
+    console.log("Dispending: ", requestedAmount);
+    // balance -= requestedAmount;
+    // return balance;
+    initialBalance = initialBalance - requestedAmount;
+    return initialBalance;
+  }
+}
+
+function deposit(initialBalance, depositAmount) {
+  console.log("Deposiing: $", depositAmount);
+  initialBalance += depositAmount;
+  console.log("your balance is now: $" + initialBalance);
+}
+
+// deposit(balance, 50);
+
+// console.log(balance);
+// withdraw(balance, 5);
+// checkBalance(balance);
+
+// console.log(checkBalance(balance)); // default return is undefined when running console.log
+// checkBalance(balance); // returns the value in the function
+
+// console.log completely inconsequential and only for the programmer; does nothing to the program
+// ATM("Brain", 2);
+// ATM("Check Balance");
+// ATM("Deposit", 2);
