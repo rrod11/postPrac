@@ -51,7 +51,7 @@ console.log(calculator("division", "brown", 5));
 function twoDimensionalSum(arr) {
   let sum = 0;
   for (let i = 0; i < arr.length; i++) {
-    let subArr[i];
+    let subArr[i]
     for (let j = 0; j < arr.length; j++) {
       sum += subArr[j];
     }
