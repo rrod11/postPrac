@@ -131,11 +131,17 @@ myForEach(['laika', 'belka'], function (el) {
 console.log(test); // ['LAIKA', 'BELKA']
 *******************************************************************************/
 
-function myForEach(array, cb) {
-  for (let ele of array) {
-    cb(ele);
+function myForEach(arr, cb) {
+  for (let i = 0; i < arr.length; i++) {
+    cb(arr[i], i, arr);
   }
 }
+
+// function myForEach(array, cb) {
+//   for (let ele of array) {
+//     cb(ele);
+//   }
+// }
 
 /*******************************************************************************
 Write a function `myMap` that accepts an array and a callback as arguments.
