@@ -1127,3 +1127,46 @@ function mySimpleReduce(array, cb) {
   }
   return acc;
 }
+
+/*
+ Given the below array, write a function printNames that prints the
+name of every object in the array.
+*/
+
+/*
+// const users = [
+//   {
+//     name: "Gerald",
+//     age: 23,
+//     height: 68,
+//   },
+//   {
+//     name: "Winnie",
+//     age: 35,
+//     height: 62,
+//   },
+//   {
+//     name: "Peter",
+//     age: 61,
+//     height: 72,
+//   },
+// ];
+
+// const printNames = (users) => {
+//   //   for (let i = 0; i < users.length; i++) {
+//   //     let obj = users[i];
+//   //     if ("name" in obj) {
+//   //       console.log(obj.name);
+//   //     }
+//   //   }
+//   // };
+//   for (let dub of users) {
+//     console.log(dub.name);
+//   }
+//   //   for (let key of users) {
+//   //     console.log(key.name);
+//   //   }
+// };
+
+// printNames(users); // Gerald Winnie Peter
+*/
