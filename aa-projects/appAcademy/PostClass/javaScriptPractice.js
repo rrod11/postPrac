@@ -1170,7 +1170,7 @@ name of every object in the array.
 
 // printNames(users); // Gerald Winnie Peter
 */
-
+/*
 Write a function printObject(obj) that prints out all key-value pairs of an object. The format should be key - value.
 
 HINT: use a for loop
