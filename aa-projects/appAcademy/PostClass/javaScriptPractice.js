@@ -1189,3 +1189,25 @@ HINT: use a for loop
 
 // printObject(bootcamp); // prints
 // // name - App Academy
+
+/*
+Given the object below, use Object.keys() to iterate through the object and
+print all its values.
+*/
+
+// const obj = {
+//   first: "1",
+//   second: 2,
+//   third: "three",
+// };
+
+// // let keys = Object.keys(obj);
+
+// // for (let key of keys) {
+// //   console.log(obj[key]);
+// // }
+
+// for (let key in obj) {
+//   //   console.log(key);  /// prints the keys
+// //   console.log(obj[key]); // prints the values
+// }
