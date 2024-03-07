@@ -1257,3 +1257,20 @@ const obj = {
 // }
 
 // find3Es(obj); // hexagon
+
+// Explicit Return
+// we have to explicitly use the curly and the return keyword
+// we do so whenever our statement cannot be done on one line
+
+let addNums = (num1, num2) => {
+  let sum = num1 + num2;
+  return sum;
+};
+
+// console.log(addNums(10, 5)); // 15
+
+// Implicit Return
+// we can omit the return keyword and "curlys"
+//if our statement can be done in one line
+
+let addNums2 = (num1, num2) => num1 + num2;
