@@ -1211,3 +1211,49 @@ print all its values.
 //   //   console.log(key);  /// prints the keys
 // //   console.log(obj[key]); // prints the values
 // }
+
+/*
+Given the object below, use Object.keys() to iterate through the object and
+print the value if there are 3 or more "e"s shared between the key and value.
+*/
+const obj = {
+  red: "circle",
+  blue: "square",
+  green: "hexagon",
+};
+
+// 1. we want to grab all the keys
+// 2. create a counter variable
+// 3. create a helper function that counts all e's
+// 4. loop through keys
+// 5. grab values using keys
+// 6. use the helper function to add to our counter and check if the counter is greater than 3 each iteration
+
+// function find3Es(obj) {
+//   let keys = Object.keys(obj);
+//   let counter = 0;
+//   for (let key of keys) {
+//     let value = obj[key];
+
+//     counter += countEs(key);
+//     counter += countEs(value);
+
+//     if (counter >= 3) {
+//       console.log(value);
+//     }
+//     counter = 0;
+//   }
+// }
+// // => return a count
+
+// function countEs(word) {
+//   let count = 0;
+//   for (let i = 0; i < word.length; i++) {
+//     if (word[i].toLowerCase() === "e") {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+// find3Es(obj); // hexagon
