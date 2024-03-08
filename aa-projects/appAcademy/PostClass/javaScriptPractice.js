@@ -1296,3 +1296,13 @@ for (let i = 0; i < keysArr.length; i++) {
   //   console.log("key", key);
   //   console.log("value", show[key]);
 }
+
+// get all the values
+let valuesArr = Object.values(show);
+// console.log(valuesArr);
+
+//gets all entries
+//returns a matrix with nested arrays, with the keys as the first index
+//the value as the second index
+let entryArr = Object.entries(show);
+// console.log(entryArr);
