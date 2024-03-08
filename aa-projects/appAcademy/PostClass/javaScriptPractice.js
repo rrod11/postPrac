@@ -1274,3 +1274,25 @@ let addNums = (num1, num2) => {
 //if our statement can be done in one line
 
 let addNums2 = (num1, num2) => num1 + num2;
+
+let show = {
+  name: "star trek",
+  series: ["tos", "tng", "ds9", "voy"],
+  captains: {
+    tos: "kirk",
+    tng: "picard",
+    ds9: "sisko",
+    voy: "janeway",
+  },
+};
+
+let keysArr = Object.keys(show);
+// console.log(keysArr);
+
+// now that we have an array of keys
+//we can iterate through this array to get the values
+for (let i = 0; i < keysArr.length; i++) {
+  let key = keysArr[i];
+  //   console.log("key", key);
+  //   console.log("value", show[key]);
+}
