@@ -1306,3 +1306,53 @@ let valuesArr = Object.values(show);
 //the value as the second index
 let entryArr = Object.entries(show);
 // console.log(entryArr);
+
+/*
+ADVANCED ARRAYS
+    -arrays are just POJOs
+    -
+*/
+let myArr = [5, 6, 7, 8];
+//           0  1  2  3
+let fakeArr = {
+  0: 5,
+  1: 6,
+  2: 7,
+  3: 8,
+  length: 4,
+  push: (val) => {
+    fakeArr[fakeArr.length] = val;
+    fakeArr.length += 1;
+  },
+  forEach: (cb) => {
+    for (let i = 0; i < fakeArr.length; i++) {
+      cb(fakeArr[i]);
+    }
+  },
+};
+let myCallBack = (element) => console.log(element);
+// myArr.forEach(myCallBack);
+// fakeArr.forEach(myCallBack);
+
+// console.log(myArr); // [ 5, 6, 7, 8 ]
+// console.log(fakeArr); // { '0': 5, '1': 6, '2': 7, '3': 8 }
+// console.log(myArr[1]); // 6
+// console.log(fakeArr[1]); // 6
+// console.log(myArr.length); // 4
+// console.log(fakeArr.length); // undefined if not an actual key in an object
+// console.log(myArr.push(9)); // returns new length
+// console.log(fakeArr.push(9)); // .push is not a function for objects have to manually add key or function
+// myArr.push(9);
+// fakeArr.push(9);
+// console.log(myArr);
+// console.log(fakeArr);
+
+// const array1 = ["a", "b", "c"];
+
+// array1.forEach(myCallBack); //for each needs a function to function
+
+// expected output: 'a'
+// expected output: 'b'
+// expected output: 'c'
+
+// forEach, map, filter,
