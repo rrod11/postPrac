@@ -1356,3 +1356,41 @@ let myCallBack = (element) => console.log(element);
 // expected output: 'c'
 
 // forEach, map, filter,
+
+/*
+Given the array friends below, use the Array.forEach() method to iterate through each element and print the name and yearsOfFriendship properties stylized as "name: yearsOfFriendship years".
+*/
+
+const friends = [
+  {
+    name: "Albert",
+    yearsOfFriendship: 3,
+  },
+  {
+    name: "Angela",
+    yearsOfFriendship: 2,
+  },
+  {
+    name: "Freddy",
+    yearsOfFriendship: 8,
+  },
+  {
+    name: "Agatha",
+    yearsOfFriendship: 6,
+  },
+];
+
+//forEach
+
+friends.forEach((friends) => {
+  let myStr = friends.name + ":" + " " + friends.yearsOfFriendship + " years";
+  console.log(myStr);
+});
+
+/*
+Should print:
+Albert: 3 years
+Angela: 2 years
+Freddy: 8 years
+Agatha: 6 years
+*/
