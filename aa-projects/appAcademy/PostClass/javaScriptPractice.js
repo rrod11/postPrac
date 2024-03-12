@@ -1426,3 +1426,19 @@ let filteredArr = friends.filter((friends) => {
 });
 
 console.log(filteredArr);
+
+//find
+//-essentially .includes but you specify the criteria with a callback
+//-flexible .includes
+
+//reduce
+// let totalYears = friends.reduce((accummulator, friends) => {
+//   return accummulator + friends.yearsOfFriendship;
+// });
+let totalYears = friends.reduce((accummulator, friends) => {
+  if (typeof accummulator === "object") {
+    return accummulator.yearsOfFriendship + friends.yearsOfFriendship;
+  }
+  return accummulator + friends.yearsOfFriendship;
+});
+console.log(totalYears);
