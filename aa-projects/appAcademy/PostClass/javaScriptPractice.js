@@ -1458,3 +1458,17 @@ console.log(obj["firstKey"]); // firstValue
 console.log(obj["numeric"]); // 2
 console.log(obj["boolean"]); // false
 console.log(obj["object"]); // {}
+
+/*
+Given the object below, delete the key-value pair such that "{}" is printed
+when printing the object.
+*/
+
+// const obj = {
+//   first: "1",
+// };
+
+// delete obj["first"];
+delete obj.first;
+
+console.log(obj); // {}
