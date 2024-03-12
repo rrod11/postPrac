@@ -1412,3 +1412,17 @@ let newArr = friends.map((friends) => {
 });
 
 console.log(newArr);
+
+//filter
+//-callback returns true or false, if true include in new array
+//-otherwise ignore it
+
+let filteredArr = friends.filter((friends) => {
+  if (friends.name[0] === "A" && friends.yearsOfFriendship > 5) {
+    //   if (friends.yearsOfFriendship > 5) {
+    return true;
+  }
+  return false;
+});
+
+console.log(filteredArr);
