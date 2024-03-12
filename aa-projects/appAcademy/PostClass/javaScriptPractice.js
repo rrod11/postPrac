@@ -1394,3 +1394,21 @@ Angela: 2 years
 Freddy: 8 years
 Agatha: 6 years
 */
+
+/*
+Given the array friends below, use the Array.map() method to map the
+current array to an array of booleans representing whether or not the friend
+has been friends with the user for more than 5 years. Then print the newly
+mapped array.
+*/
+
+//map
+
+let newArr = friends.map((friends) => {
+  if (friends.yearsOfFriendship > 5) {
+    return friends.name;
+  }
+  return null;
+});
+
+console.log(newArr);
