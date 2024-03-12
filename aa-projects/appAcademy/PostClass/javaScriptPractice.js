@@ -1442,3 +1442,19 @@ let totalYears = friends.reduce((accummulator, friends) => {
   return accummulator + friends.yearsOfFriendship;
 });
 console.log(totalYears);
+
+/*
+Given the following declaration of an object, obj below, declare values so
+that the print statements output what is expected. Try using both dot and bracket notation.
+*/
+// const obj = {};
+
+obj.object = {};
+obj.boolean = false;
+obj["numeric"] = 2;
+obj["firstKey"] = "firstValue";
+
+console.log(obj["firstKey"]); // firstValue
+console.log(obj["numeric"]); // 2
+console.log(obj["boolean"]); // false
+console.log(obj["object"]); // {}
