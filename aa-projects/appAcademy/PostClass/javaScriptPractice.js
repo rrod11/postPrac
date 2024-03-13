@@ -1514,3 +1514,42 @@ Write a function catBuilder(name, color, toys) that returns a cat object object 
 
 // console.log(catBuilder("Nyan", "rainbow", ["poptarts"]));
 // // prints: { name: 'Nyan', color: 'rainbow', toys: [ 'poptarts' ] }
+
+/*
+In this practice, you will practice navigating objects that are nested within
+an array. Given the below array, write a function printNames that prints the
+name of every object in the array.
+*/
+// const users = [
+//   {
+//     name: "Gerald",
+//     age: 23,
+//     height: 68,
+//   },
+//   {
+//     name: "Winnie",
+//     age: 35,
+//     height: 62,
+//   },
+//   {
+//     name: "Peter",
+//     age: 61,
+//     height: 72,
+//   },
+// ];
+
+// let printNames = (user) => {
+//   //   for (let i = 0; i < user.length; i++) {
+//   //     console.log(user[i].name);
+//   //   }
+//   //   for (let key of user) {
+//   //     console.log(key.name);
+//   //   }
+//   //   for (let i = 0; i < user.length; i++) {
+//   //     if ("name" in user[i]) {
+//   //       console.log(user[i].name);
+//   //     }
+//   //   }
+// };
+
+// printNames(users);
