@@ -1576,3 +1576,77 @@ HINT: use a for loop
 // // name - App Academy
 // // color - Red
 // // population - 120
+
+/*
+Given the object below, use Object.keys() to iterate through the object and
+print all its values.
+*/
+
+// const obj = {
+//   first: "1",
+//   second: 2,
+//   third: "three",
+// };
+
+// let val = Object.keys(obj);
+// for (let key of val) {
+//   console.log(obj[key]);
+// }
+
+// console.log(val);
+
+// let arr = [1, 1, 3, 2, 2, 1];
+
+// const result = arr.reduce(function (acc, value) {
+//   if (acc[value]) {
+//     acc[value]++;
+//     // console.log("first return:", acc[value]++);
+//   } else {
+//     acc[value] = 1;
+//     // console.log("else first return:", acc[value]);
+//   }
+// //   console.log("actual first return:", acc);
+//   return acc;
+// }, {});
+
+// console.log(result);
+
+// let arr = [1, 1, 3, 2, 2, 1];
+
+// const result = arr.reduce(callback, {});
+
+// function callback(acc, value) {
+//   console.log(acc, value);
+//   if (acc[value]) {
+//     acc[value]++;
+//   } else {
+//     acc[value] = 1;
+//   }
+//   return acc;
+// }
+
+// console.log(result);
+
+let arr = [1, 1, 3, 2, 2, 1];
+//         0  1  2  3  4  5
+
+const result = arr.reduce(callback, {});
+
+function callback(acc, elem, index, array) {
+  console.log("------------------");
+  console.log("Iteration: " + index);
+  console.log("------------------");
+  console.log(acc, elem, " at index " + index);
+  if (acc[elem]) {
+    acc[elem]++;
+  } else {
+    acc[elem] = 1;
+  }
+  console.log(acc, elem);
+  return acc;
+}
+
+console.log("------------------");
+console.log("Final Return Value");
+console.log("------------------");
+console.log(result);
