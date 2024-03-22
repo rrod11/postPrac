@@ -1924,3 +1924,15 @@ console.log(firstFruitObject(fruits));
 function firstFruitObject(fruits) {
   return fruits[0];
 }
+
+/* 02. `lastFruitObject()` - Return the last object in the fruits array
+
+console.log(lastFruitObject(fruits));
+// { genus: 'Citrullus', name: 'Watermelon', id: 25, family: 'Cucurbitaceae',
+// order: 'Cucurbitales', nutritions: { carbohydrates: 8, protein: 0.6, fat:
+// 0.2, calories: 30, sugar: 6 } }
+*/
+
+function lastFruitObject(fruits) {
+  return fruits[fruits.length - 1];
+}
