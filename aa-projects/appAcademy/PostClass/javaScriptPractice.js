@@ -1936,3 +1936,17 @@ console.log(lastFruitObject(fruits));
 function lastFruitObject(fruits) {
   return fruits[fruits.length - 1];
 }
+
+/* 03. `indexFruitObject()` - Return one object at the given index from the
+fruits array. The function should have two parameters, the array and the
+index of the item.
+
+console.log(indexFruitObject(17, fruits));
+// { genus: 'Mangifera', name: 'Mango', id: 27, family: 'Anacardiaceae',
+// order: 'Sapindales', nutritions: { carbohydrates: 15, protein: 0.82, fat:
+// 0.38, calories: 60, sugar: 13.7 } };
+*/
+
+function indexFruitObject(index, fruits) {
+  return fruits[index];
+}
