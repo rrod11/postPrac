@@ -1960,3 +1960,22 @@ console.log(fruitNames(fruits));
     'Passionfruit', 'Pear', 'Persimmon', 'Pineapple', 'Plum', 'Raspberry',
     'Strawberry', 'Tomato', 'Umbu', 'Watermelon' ];
 */
+
+function fruitNames(fruits) {
+  let arr = [];
+  for (let fruit of fruits) {
+    arr.push(fruit.name);
+  }
+  return arr;
+}
+
+/* 05. `getFruitKeys()` - Return a list of all of the keys for each fruit record.
+NOTE: Call a function you previously wrote as a helper function.
+
+// console.log(getFruitKeys(fruits));
+// // [ 'genus', 'name', 'id', 'family', 'order', 'nutritions' ];
+*/
+
+function getFruitKeys(fruits) {
+  return Object.keys(indexFruitObject(0, fruits));
+}
