@@ -1979,3 +1979,20 @@ NOTE: Call a function you previously wrote as a helper function.
 function getFruitKeys(fruits) {
   return Object.keys(indexFruitObject(0, fruits));
 }
+
+/* 06. `getNutritionsKeys()` - Return a list of all of the keys within each
+"nutritions" object.
+NOTE: Can you use a different approach than what you used in the previous
+problem? Can you use a helper function?
+
+console.log(getNutritionsKeys(fruits));
+// [ 'carbohydrates', 'protein', 'fat', 'calories', 'sugar' ];
+*/
+
+function getNutritionsKeys(fruits) {
+  for (let fruit of fruits) {
+    return Object.keys(fruit.nutritions);
+  }
+}
+
+const fruits = require("../fruit-data");
