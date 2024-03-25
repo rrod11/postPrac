@@ -1996,3 +1996,17 @@ function getNutritionsKeys(fruits) {
 }
 
 const fruits = require("../fruit-data");
+
+/* 07. `addKeyAndValueToAll()` - Return the fruits array, adding the given key and
+value to each fruit object
+
+console.log(addKeyAndValueToAll(fruits, "inStock", true));
+// returns array of 31 fruits, and each fruit object includes "inStock: true"
+*/
+
+function addKeyAndValueToAll(array, key, value) {
+  for (let fruit of array) {
+    fruit[key] = value;
+  }
+  return array;
+}
