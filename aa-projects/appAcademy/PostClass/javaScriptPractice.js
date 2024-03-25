@@ -2010,3 +2010,16 @@ function addKeyAndValueToAll(array, key, value) {
   }
   return array;
 }
+
+/* 08. `addKeyAndValueToOne()` - Return object at the given index array, adding the given key and
+value to that fruit object
+
+console.log(addKeyAndValueToOne(fruits, "color", "red", 1));
+// returns first object ("Apple"), including "color: red"
+*/
+
+function addKeyAndValueToOne(array, key, value, index) {
+  let fruit = array[index];
+  fruit[key] = value;
+  return fruit;
+}
