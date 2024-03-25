@@ -1950,3 +1950,13 @@ console.log(indexFruitObject(17, fruits));
 function indexFruitObject(index, fruits) {
   return fruits[index];
 }
+
+/* 04. `fruitNames()` - Return a list of all of the fruit names
+
+console.log(fruitNames(fruits));
+// [ 'Apple', 'Apricot', 'Banana', 'Blackberry', 'Blueberry', 'Cherry', 'Durian',
+    'Fig', 'Gooseberry', 'Grapes', 'GreenApple', 'Guava', 'Kiwi', 'Lemon',
+    'Lime', 'Lingonberry', 'Lychee', 'Mango', 'Melon', 'Orange', 'Papaya',
+    'Passionfruit', 'Pear', 'Persimmon', 'Pineapple', 'Plum', 'Raspberry',
+    'Strawberry', 'Tomato', 'Umbu', 'Watermelon' ];
+*/
