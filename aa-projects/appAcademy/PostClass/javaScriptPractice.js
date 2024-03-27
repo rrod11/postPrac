@@ -2023,3 +2023,19 @@ function addKeyAndValueToOne(array, key, value, index) {
   fruit[key] = value;
   return fruit;
 }
+
+/* 09. `updateKeyName()` - Change the old key name to the new key name in all
+objects, and return the resulting array.
+HINT: Can you make a copy of the old key and value, and then delete the original?
+
+console.log(updateKeyName(fruits, "nutritions", "nutrition"));
+// returns fruits array, but every "nutritions" key had changed to "nutrition"
+*/
+
+function updateKeyName(array, oldKey, newKey) {
+  for (let key of array) {
+    key[newKey] = key[oldKey];
+    delete key[oldKey];
+  }
+  return array;
+}
