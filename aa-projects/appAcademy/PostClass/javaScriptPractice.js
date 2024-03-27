@@ -2039,3 +2039,30 @@ function updateKeyName(array, oldKey, newKey) {
   }
   return array;
 }
+
+/* 10. `updateIdValues()` - Change all of the "id" values to six-character
+strings, and return an array of all of the new id values.
+For example: 1 becomes "000001", and 31 becomes "000031"
+
+console.log(updateIdValues(fruits));
+// returns a list of 31 id, in six-character string format:
+// [ '000006', '000035', '000001', '000064', '000033', '000009', '000060',
+    '000068', '000069', '000047', '000072', '000037', '000066', '000026',
+    '000044', '000065', '000067', '000027', '000041', '000002', '000042',
+    '000070', '000004', '000052', '000010', '000071', '000023', '000003',
+    '000005', '000073', '000025' ];
+*/
+
+function updateIdValues(array) {
+  const newIds = [];
+
+  for (let i = 0; i < array.length; i++) {
+    const newId = array[i].id.toString().padStart(6, "0");
+    array[i].id = newId;
+    newIds.push(newId);
+  }
+
+  return newIds;
+}
+
+console.log(updateIdValues(fruits));
