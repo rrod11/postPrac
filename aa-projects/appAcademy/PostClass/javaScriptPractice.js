@@ -2108,3 +2108,36 @@ function keyValueDuplicates(obj) {
   }
   return arr;
 }
+
+/***********************************************************************
+Write a function `mostFrequentLetter(string)` that takes a
+string as an argument and returns the character that appears the
+most often. In case of a tie, you may return any of the characters.
+The string will have at least one character.
+
+Examples:
+
+console.log(mostFrequentLetter("apple")); // "p"
+console.log(mostFrequentLetter("banana")); // "a"
+console.log(mostFrequentLetter("What about a longer string?")); // " "
+***********************************************************************/
+
+function mostFrequentLetter(string) {
+  let obj = {};
+  for (let letter of string) {
+    if (obj[letter]) {
+      obj[letter]++;
+    } else {
+      obj[letter] = 1;
+    }
+  }
+  let val = 0;
+  let goal;
+  for (let letter in obj) {
+    if (obj[letter] > val) {
+      val = obj[letter];
+      goal = letter;
+    }
+  }
+  return goal;
+}
