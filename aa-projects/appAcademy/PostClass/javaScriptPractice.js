@@ -2066,3 +2066,18 @@ function updateIdValues(array) {
 }
 
 console.log(updateIdValues(fruits));
+
+/* 11. `deleteKeysandValues()` - Delete the keyToDelete from the nutritions
+object from every fruit, and return the array.
+
+console.log(deleteKeysAndValues(fruits, "sugar"));
+// returns fruits array, but every "nutritions" key no longer has a "sugar" key
+*/
+
+function deleteKeysAndValues(array, keyToDelete) {
+  array.forEach((fruit) => {
+    let nutrue = fruit.nutritions;
+    delete nutrue[keyToDelete];
+  });
+  return array;
+}
