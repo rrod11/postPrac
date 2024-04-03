@@ -2219,3 +2219,79 @@ function dynamicAdder(num) {
     return x + num;
   };
 }
+
+// // Given an array of numbers, return to me an object that contains the counts.
+// // let arr = [1, 1, 3, 2, 2, 1]; // -> { '1': 3, '3': 1, '2': 2 }
+// // input: an array of numbers
+// // output: an object with the number being the key and the number of times that said number appears being the value
+// //CONSTRAINT: HAVE TO USE REDUCE
+// /////
+// // STEPS
+// // 1. WE NEED AN EMPTY OBJECT
+// ////////////
+
+// //2. WE NEED TO ITERATE THROUGH THE ENTIRETY OF THE ARRAY USING REDUCE
+// // NEED TO INCORPORATE AN OBJECT TO BE THE RETURN VALUE OF THE REDUCE METHOD
+// //2.1 WE NEED TO CHECK IF THE PRESENT NUMBER EXISTS INSIDE THE OBJECT WE CREATED
+// //2.1A IF THE NUMBER DOES NOT EXIST WE NEED TO CREATE A KEY, BEING THAT SAID NUMBER, AND ASSIGN THE VALUE OF '1' TO IT
+// //2.1B IF THE NUMBER DOES EXIST WE NEED TO INCREMENT THE VALUE BY 1 (++)
+// //
+// ////////////////////////
+// //NO LONGER NEED 3 BECAUSE REDUCE RETURNS A SINGLE VALUE AND AN OBJECT QUALIFIES
+// // 3. AFTER ITERATING THROUGHOUT THE ENTIRETY OF THE ARRAY WE NEED TO RETURN THE OBJECT
+
+// //CREATING A REDUCE METHOD STEPS
+//     // reduce should iterate through every element
+//     //PARAMETERS: callback function
+//     //output:a single value
+
+//     //1. to make a loop that iterates through the entirety of the input
+
+//     function reduce(cb){
+//         for()
+//     }
+// // function returnNewObject(array) {
+// //   const obj = {};
+// //   for (let ele of array) {
+// //     if (obj[ele]) {
+// //       obj[ele]++;
+// //     } else {
+// //       obj[ele] = 1;
+// //     }
+// //   }
+// //   return obj;
+// // }
+
+// function returnNewObject(array) {
+//   obj = {};
+//   return array.reduce(cb, obj);
+
+//   function cb(obj, ele) {
+//     if (obj[ele]) {
+//       obj[ele]++;
+//     } else {
+//       obj[ele] = 1;
+//     }
+//     console.log(obj);
+//     return obj;
+//   }
+// }
+
+// let arr = [1, 1, 3, 2];
+// console.log(returnNewObject(arr)); // -> { '1': 2, '2': 1, '3': 1 }
+
+// const myReduce = (arr, cb, initialValue) => {
+// let result = initialValue;
+// for (let i = 0; i < arr.length; i++){
+//     result = cb(result);
+// }
+// return result
+// }
+
+// console.log(returnNewObject(arr));
+
+// console.log("I am an example\n" + "of an extremely long string");
+
+// console.log(`I am an example
+// of an extremely long string
+// on multiple lines`);
