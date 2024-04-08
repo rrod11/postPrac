@@ -2503,3 +2503,54 @@ Write a function that accepts and object, obj, and uses Object.values to print a
 // };
 
 // printValues(obj);
+
+/*
+Write a function that takes in an object that uses car owners' names as keys
+and the car brand they own as values. The function should print the names of the owners whose names are strictly longer than 5 characters and who own a "Honda".
+Note: Use Object.entries to make your life easier!
+*/
+// const obj = {
+//   Jacky: "Honda",
+//   Ramon: "Kia",
+//   Lexi: "Mercedes",
+//   Eli: "Honda",
+//   Bradley: "Honda",
+//   Cecily: "BMW",
+// };
+
+//POLYS
+// constraints: USE OBJECT.ENTRIES
+//input: obj
+//output: name of people with names longer than 5 characters who also own a honda
+//STEPS
+// w/o object.entries
+//use for in to obtain keys.
+//check keys to see if name is longer than 5
+//if name is longer than 5 and the value it holds is 'honda'
+//return name
+
+//W/ USING OBJECT.ENTRIES
+// capture return of object.entries in a variable
+// iterate through the variable to check if name is longer than 5 characters
+//check if value is equal to honda
+//return name  if both are true
+
+// let printOwners1 = (obj) => {
+//   for (let key in obj) {
+//     if (key.length > 5 && obj[key] === "Honda") {
+//       console.log(key);
+//     }
+//   }
+// };
+
+// let printOwners = (obj) => {
+//   let arr = Object.entries(obj);
+//   for (let key of arr) {
+//     if (key[0].length > 5 && key[1] === "Honda") {
+//       console.log(key[0]);
+//     }
+//   }
+// };
+
+// printOwners1(obj); // Bradley
+// printOwners(obj); // Bradley
