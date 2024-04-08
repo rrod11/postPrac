@@ -2424,3 +2424,23 @@ HINT: use a for loop
 // //  ["color", "Black"],
 // //  ["members", 15],
 // //];
+
+/*
+Given the object below, use Object.keys() to iterate through the object and
+print all its values.
+*/
+
+// const obj = {
+//   first: "1",
+//   second: 2,
+//   third: "three",
+// };
+
+// let objKeys = (obj) => {
+//   let key = Object.keys(obj);
+//   for (let value of key) {
+//     console.log(obj[value]);
+//   }
+// };
+
+// objKeys(obj);
