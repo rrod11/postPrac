@@ -2487,3 +2487,19 @@ print the value if there are 3 or more "e"s shared between the key and value.
 
 // find3Es(obj);
 // // console.log(eCounter("seventeen"));
+
+/*
+Write a function that accepts and object, obj, and uses Object.values to print all values in the object.
+*/
+
+// const obj = {
+//   first: "1",
+//   second: 2,
+//   third: "three",
+// };
+
+// const printValues = (obj) => {
+//   console.log(Object.values(obj));
+// };
+
+// printValues(obj);
