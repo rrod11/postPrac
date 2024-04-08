@@ -2444,3 +2444,46 @@ print all its values.
 // };
 
 // objKeys(obj);
+
+/*
+Given the object below, use Object.keys() to iterate through the object and
+print the value if there are 3 or more "e"s shared between the key and value.
+*/
+
+//Need a helper function to count the es in the values and keys
+//need a counter
+//need to iterate through the word
+//need to increment count if e is found
+// return the count
+// need a main function to decide if there is 3 or more Es in the key value pair
+// need to evaluate both key and value
+// if sum of es in both >= 3 return value
+
+// const obj = {
+//   red: "circle",
+//   blue: "square",
+//   green: "hexagon",
+//   yeller: "pallalelogram",
+// };
+
+// let eCounter = (word) => {
+//   let count = 0;
+//   for (let i = 0; i < word.length; i++) {
+//     if (word[i].toLowerCase() === "e") {
+//       count++;
+//     }
+//   }
+//   return count;
+// };
+
+// let find3Es = (obj) => {
+//   for (let keys in obj) {
+//     let values = obj[keys];
+//     if (eCounter(keys) + eCounter(values) >= 3) {
+//       console.log(values);
+//     }
+//   }
+// };
+
+// find3Es(obj);
+// // console.log(eCounter("seventeen"));
