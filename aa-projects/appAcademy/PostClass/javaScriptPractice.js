@@ -2554,3 +2554,29 @@ Note: Use Object.entries to make your life easier!
 
 // printOwners1(obj); // Bradley
 // printOwners(obj); // Bradley
+
+/*
+Given an object, obj, declare a method, printValues on obj that prints all unique values within the object.
+*/
+
+// const obj = {
+//   Jacky: "Honda",
+//   Ramon: "Kia",
+//   Lexi: "Mercedes",
+//   Eli: "Honda",
+//   Bradley: "Honda",
+//   Cecily: "BMW",
+// };
+
+// const printUniqueValues = (obj) => {
+//   let arr = [];
+//   for (let key in obj) {
+//     if (!arr.includes(obj[key])) {
+//       arr.push(obj[key]);
+//       console.log(obj[key]);
+//     }
+//   }
+//   return arr;
+// };
+
+// printUniqueValues(obj); // Honda Kia Mercedes BMW
