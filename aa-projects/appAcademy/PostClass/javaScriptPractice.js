@@ -2639,3 +2639,28 @@ and returns true if that key exists on the object or false otherwise.
 // console.log(includedInObject(obj, "first")); // true
 // console.log(includedInObject(obj, "second")); // true
 // console.log(includedInObject(obj, "fourth")); // false
+
+/*
+Write a function valInObject that accepts an object, obj, and a value
+The function should return true if that value is indeed a value in the object, or false otherwise.
+*/
+
+// const obj = {
+//   item1: "jar",
+//   item2: "pot",
+//   item3: "spatula",
+//   item3: "whisk",
+// };
+
+// const valInObject = (obj, val) => {
+//   let values = Object.values(obj);
+//   if (values.includes(val)) {
+//     return true;
+//   }
+//   return false;
+// };
+
+// console.log(valInObject(obj, "jar")); // true
+// console.log(valInObject(obj, "pot")); // true
+// console.log(valInObject(obj, "cup")); // false
+// console.log(valInObject(obj, "fork")); // false
