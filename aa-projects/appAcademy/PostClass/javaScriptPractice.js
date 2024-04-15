@@ -2695,3 +2695,26 @@ characters.
 // };
 
 // console.log(counter(sentence)); //  "t"
+
+/*
+Given the nested array of objects below, write a function, getSecondObjValues,
+that prints the value of the second object within each nested sub-array. If there is no second object, print null.
+*/
+// const nestedArr = [
+//   [{ a: 1 }, { b: 2 }],
+//   [{ c: 3 }, { d: 4 }, { e: 5 }],
+//   [{ f: 6 }],
+//   [{ g: 7 }, { h: 8 }],
+// ];
+
+// const getSecondObjValues = (arr) => {
+//   for (let nest of arr) {
+//     if (nest.length >= 2) {
+//       console.log(Object.values(nest[1]));
+//     } else {
+//       console.log("null");
+//     }
+//   }
+// };
+
+// console.log(getSecondObjValues(nestedArr)); // 2 4 null 8
