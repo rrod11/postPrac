@@ -2743,3 +2743,43 @@ that takes that object and returns all values that are at a depth of 2.
 // };
 
 // printDepthOfTwo(nestedObj); // cello dello fellow { h: "hello", i: "io" } jello
+
+/*
+Write a function named restSum that accepts all incoming parameters and sums them.
+*/
+
+// const restSum = (...num) => {
+//   let sum = 0;
+//   for (let number of num) {
+//     sum += number;
+//   }
+//   return sum;
+// };
+
+// console.log(restSum(3, 5, 6)); // => 14
+// console.log(restSum(1, 2, 3, 4, 5, 6, 7, 8, 9)); // => 45
+// console.log(restSum(0)); // => 0
+
+// const myReduce = (arr, cb, initialValue = null) => { // to figure out what the default initial
+//   if(initialValue === null){                         // value was by passing in varius values
+//     initialValue = arr[0]
+//   } else {
+//     initialValue = cb(initialValue, arr[0])
+//   }
+
+//   for(let i = 1; i < arr.length; i++){
+//     initialValue = cb(initialValue, arr[i])
+//   }
+
+//   return initialValue
+// }
+
+// // TEST
+// const testArr = [1, 1, 3, 2, 2, 1]
+// const add = (acc, elem) => { return acc + elem }
+
+// const result = myReduce(testArr, add, 0)
+// console.log(result) // 10
+
+// const result2 = myReduce(testArr, add, 5)
+// console.log(result2) // 15
