@@ -2718,3 +2718,28 @@ that prints the value of the second object within each nested sub-array. If ther
 // };
 
 // console.log(getSecondObjValues(nestedArr)); // 2 4 null 8
+
+/*
+Given an object that has other objects nested inside of it, write a function
+that takes that object and returns all values that are at a depth of 2.
+*/
+
+// const printDepthOfTwo = (obj) => {
+//   //   create a loop to iterate though each key within the object
+//   for (let key in obj) {
+//     //     if the value of the key is an object
+//     if (typeof obj[key] === "object") {
+//       //         create a loop to iterate through each key in the nested obj
+//       for (subKey in obj[key]) {
+//         //           if the value of the nested key IS an object
+//         if (typeof obj[key][subKey] === "object") {
+//           console.log(obj[key][subKey]);
+//         } else {
+//           console.log(obj[key][subKey]);
+//         }
+//       }
+//     }
+//   }
+// };
+
+// printDepthOfTwo(nestedObj); // cello dello fellow { h: "hello", i: "io" } jello
