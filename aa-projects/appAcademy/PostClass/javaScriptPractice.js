@@ -2796,3 +2796,20 @@ uses spread operator syntax to return a single array.
 // console.log(spreadItOut([3, 5, 6], [1, 2, 3])); // => [3,5,6,1,2,3];
 // console.log(spreadItOut([], [1, 2, 3])); // => [1,2,3];
 // console.log(spreadItOut(["apple", "banana"], [1, 2, 3])); // => ["apple", "banana", 1, 2, 3];
+/*
+Write a function breakDownObj(obj) that takes in an object as a parameter
+and returns an array containing:  all the keys from the object and all the
+values of the object.
+
+Hint: Use spread syntax to spread out elements into an array!
+*/
+
+// let object1 = { name: "Rupert", age: 5, speak: "Meow" };
+// let object2 = { location: "NY", borough: "Brooklyn" };
+
+// const breakDownObj = (obj) => {
+//   return (newarr = [...Object.keys(obj), ...Object.values(obj)]);
+// };
+
+// console.log(breakDownObj(object1)); // => [ 'name', 'age', 'speak', 'Rupert', 5, 'Meow' ]
+// console.log(breakDownObj(object2)); // => [ 'location', 'borough', 'NY', 'Brooklyn' ]
