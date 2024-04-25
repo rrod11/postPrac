@@ -2856,3 +2856,51 @@ Hint: As a side effect, you will end up creating a green variable with value
 
 // console.log(objClone); // { red: "circle", blue: "square", yellow: "pentagon" }
 // console.log(green); // hexagon
+
+/*
+Given an object, write a function that returns the most
+common character within the object. If there are multiple characters that
+appear the most, return the lexicographically smallest one (e.g. if 'a' and 'b' are both the most common, return 'a' because it is closest to the beginning of the alphabet). Be sure to exclude spaces when counting
+characters.
+*/
+
+// const blackClover = {
+//   asta: "Anti Magic",
+//   yuno: "Wind Spirit",
+//   charmy: "Gluttony",
+//   yami: "Dark Magic",
+//   julius: "Time Magic",
+// };
+
+// const objectCount = (obj) => {
+//   let object = {};
+//   for (let keys in blackClover) {
+//     let blackCloverValues = blackClover[keys].toLowerCase();
+//     for (let letter of blackCloverValues) {
+//       if (letter === " ") continue;
+//       if (object[letter]) {
+//         object[letter]++;
+//       } else {
+//         object[letter] = 1;
+//       }
+//     }
+//     for (let key of keys) {
+//       if (object[key]) {
+//         object[key]++;
+//       } else {
+//         object[key] = 1;
+//       }
+//     }
+//   }
+//   let value = 0;
+//   let goal;
+//   for (let index in object) {
+//     if (object[index] > value) {
+//       value = object[index];
+//       goal = index;
+//     }
+//   }
+//   return goal;
+// };
+
+// console.log(objectCount(blackClover));
