@@ -2933,3 +2933,35 @@ For example: "Albert: 3 years"
 // friends.forEach((item) => {
 //   console.log(`${item.name}: ${item.yearsOfFriendship} years`);
 // });
+
+/*
+Given the array friends below, use the Array.map() method to map the
+current array to an array of booleans representing whether or not the friend
+has been friends with the user for more than 5 years. Then print the newly
+mapped array.
+*/
+
+// const friends = [
+//   {
+//     name: "Albert",
+//     yearsOfFriendship: 3,
+//   },
+//   {
+//     name: "Angela",
+//     yearsOfFriendship: 2,
+//   },
+//   {
+//     name: "Freddy",
+//     yearsOfFriendship: 8,
+//   },
+//   {
+//     name: "Agatha",
+//     yearsOfFriendship: 6,
+//   },
+// ];
+
+// let newArr = friends.map((item) => {
+//   return item.yearsOfFriendship > 5;
+// });
+
+// console.log(newArr); // [false, false, true, true];
