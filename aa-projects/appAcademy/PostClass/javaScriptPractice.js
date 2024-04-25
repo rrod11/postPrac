@@ -2996,3 +2996,53 @@ Given the array friends below, use the Array.filter() method to filter the array
 // });
 
 // console.log(filteredArr);
+
+/*
+Should print:
+[
+    {
+        name: "Agatha",
+        yearsOfFriendship: 6
+    }
+];
+*/
+
+/*
+In this exercise, you will learn to use the Array.find() method which will be useful to know. The Array.find() method accepts a callback function that specifies the "find" condition(s) and returns the first element that satisfies the condition(s). Check out the documentation here.
+Given the friends array below, use the Array.find() method to get the first friend whose name contains 3 or more vowels and print their name.
+*/
+
+// const friends = [
+//   {
+//     name: "Albert",
+//     yearsOfFriendship: 3,
+//   },
+//   {
+//     name: "Angela",
+//     yearsOfFriendship: 2,
+//   },
+//   {
+//     name: "Freddy",
+//     yearsOfFriendship: 8,
+//   },
+//   {
+//     name: "Agatha",
+//     yearsOfFriendship: 6,
+//   },
+// ];
+
+// const threeVowelFriend = friends.find((item) => {
+//   let vowels = "aeiouAEIOU";
+//   let count = 0;
+//   let items = item.name;
+//   for (let letter of items) {
+//     if (vowels.includes(letter)) {
+//       count++;
+//     }
+//   }
+//   if (count >= 3) {
+//     return item;
+//   }
+// });
+
+// console.log(threeVowelFriend.name); // Angela
