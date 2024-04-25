@@ -3046,3 +3046,227 @@ Given the friends array below, use the Array.find() method to get the first frie
 // });
 
 // console.log(threeVowelFriend.name); // Angela
+
+/*
+Given the friends array, use the Array.reduce() method to get and print the sum of all the years of friendship with all the friends in the array.
+*/
+
+// const friends = [
+//   {
+//     name: "Albert",
+//     yearsOfFriendship: 3,
+//   },
+//   {
+//     name: "Angela",
+//     yearsOfFriendship: 2,
+//   },
+//   {
+//     name: "Freddy",
+//     yearsOfFriendship: 8,
+//   },
+//   {
+//     name: "Agatha",
+//     yearsOfFriendship: 6,
+//   },
+// ];
+
+// let totalYears = friends.reduce((acc, item) => {
+//   return item.yearsOfFriendship + acc;
+// }, 0);
+
+// console.log(totalYears); // 19
+
+// let colorCounter = (colorArr) => {
+//   let obj = {};
+//   for (let color of colorArr) {
+//     if (obj[color]) {
+//       obj[color]++;
+//     } else {
+//       obj[color] = 1;
+//     }
+//   }
+//   return obj;
+// };
+
+// let arr1 = [
+//   "asta",
+//   "yuno",
+//   "noelle",
+//   "charmy",
+//   "yami",
+//   "yuno",
+//   "asta",
+//   "vanessa",
+//   "asta",
+//   "asta",
+//   "yuno",
+// ];
+// let arr2 = [
+//   "vanessa",
+//   "noelle",
+//   "charmy",
+//   "yami",
+//   "yami",
+//   "charmy",
+//   "vanessa",
+//   "grey",
+//   "grey",
+//   "yami",
+//   "charmy",
+// ];
+// console.log(colorCounter(arr1)); // { asta: 4, yuno: 3, noelle: 1, charmy: 1, yami: 1, vanessa: 1 }
+// console.log(colorCounter(arr2)); // { vanessa: 2, noelle: 1, charmy: 3, yami: 3, grey: 2 }
+
+// function addUniqueVal(object, key, value) {
+//   if (!Object.values(object).includes(value)) {
+//     object[key] = value;
+//   }
+//   return object;
+// }
+
+// let newbie = { name: "Asta", team: "blackBulls" };
+// addUniqueVal(newbie, "weapon", "swords"); // => {name: "Willie", team: "blackBulls", weapon: "swords"}
+// addUniqueVal(newbie, "join", "blackBulls"); // => {name: "Willie", team: "blackBulls", weapon: "swords"}
+// console.log(newbie); // { name: "Asta", team: "blackBulls", weapon: "swords" }
+
+// function duplicateCharMinCount(string, minCount) {
+//   let obj = {};
+//   let arr = [];
+//   for (let letter of string) {
+//     if (obj[letter]) {
+//       obj[letter]++;
+//     } else {
+//       obj[letter] = 1;
+//     }
+//   }
+//   for (let ele in obj) {
+//     if (obj[ele] >= minCount) {
+//       arr.push(ele);
+//     }
+//   }
+//   console.log(arr);
+// }
+// duplicateCharMinCount("asta", 2); // ["a"]
+// duplicateCharMinCount("noelle", 2); // ['e', "l"]
+// duplicateCharMinCount("What about noele, asta, yami, yuno, and charmy?", 3); // ["a", "t", " ", 'o', 'y', 'n']
+
+// function roster(list) {
+//   return function (str) {
+//     list.push(str);
+//     console.log(list);
+//   };
+// }
+
+// const blackBulls = [];
+// const addToBlackBulls = roster(blackBulls);
+// addToBlackBulls("asta"); // returns ['asta']
+// addToBlackBulls("noelle"); // returns ['asta', 'noelle']
+// console.log(blackBulls); // ['asta', 'noelle']
+
+// const nums = [1, 2, 3, 4];
+// pickyMyMap(nums, (num) => num - 2); // [-1, 1, 2]
+
+// const booleans = [true, false, true, false, true];
+// pickyMyMap(booleans, (boolean) => !boolean); // [true, true]
+
+// function pickyMyMap(arr, cb) {
+//   let array = [];
+//   for (let ele of arr) {
+//     if (cb(ele)) {
+//       array.push(cb(ele));
+//     }
+//   }
+//   return array;
+// }
+// const blackClover = [
+//   { name: "Yami", age: "28", team: "Black Bull" },
+//   { name: "Asta", age: "15", team: "Black Bull" },
+//   { name: "Noelle", age: "15", team: "Black Bull" },
+//   { name: "Yuno", age: "15", team: "Golden Dawn" },
+// ];
+
+// function filterUserProfiles(users, filter) {
+//   let arr = [];
+//   for (let ele of users) {
+//     if (filter(ele)) {
+//       arr.push(ele.name);
+//     }
+//   }
+//   console.log(arr);
+// }
+
+// filterUserProfiles(blackClover, (user) => user.age > 20); // ["Yami"]
+// filterUserProfiles(blackClover, (user) => user.team === "Black Bull"); // ["Yami", 'Asta', 'Noelle']
+
+// const sentenceMaker = (...strings) => {
+//   let arr = [];
+//   for (let string of strings) {
+//     arr.push(string);
+//   }
+//   console.log(arr.join(" ") + "!");
+// };
+
+// sentenceMaker("Hello", "Black Bulls"); // 'Hello Black Bulls!'
+// sentenceMaker("I", "love", "the Black Bulls"); // 'I love the Black Bulls!'
+// sentenceMaker(
+//   "The",
+//   "loud",
+//   "asta",
+//   "is",
+//   "my",
+//   "favorite",
+//   "Black",
+//   "Bull",
+//   "character"
+// ); // 'The loud asta is my favorite Black Bull character!'
+
+// let hiddenCount = () => {
+//   let count = 0;
+//   function counter() {
+//     count++;
+//     return count;
+//   }
+//   return counter;
+// };
+
+// let dogs = ["Fido", "Bowser"];
+
+// let [firstEl, secondEl] = dogs;
+
+// console.log(firstEl);
+
+// let company = {};
+// company.name = "Pizza Place";
+// console.log(company["name"]);
+
+// function sayPuppy() {
+//   const puppy = "Wolfie";
+//   return puppy;
+// }
+
+// sayPuppy();
+
+// console.log(puppy); // ????
+
+// function bar() {
+//   var rand = "abc";
+
+//   if (true) {
+//     const rand = "efg";
+//   }
+//   return rand;
+// }
+
+// console.log(bar()); // ???
+
+let foo = function (n, cb) {
+  console.log("vroom");
+  for (let i = 0; i < n; i++) {
+    cb();
+  }
+  console.log("skrrt");
+};
+
+foo(2, function () {
+  console.log("swoosh");
+});
