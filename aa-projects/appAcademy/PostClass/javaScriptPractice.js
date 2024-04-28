@@ -3298,3 +3298,40 @@ const cats = [
   { name: "Tiger", cuteness: 7 },
   { name: "Indie", cuteness: 5 },
 ];
+
+/*
+
+Fix the function `shouldRecycle` that determines if the item passed in can
+or cannot be recycled.
+
+If an item is plastic then it can be recycled and should return `Recycle Me!`
+UNLESS its color is black. Black plastics should return `Currently, cannot be
+recycled.`
+
+If an item is made of aluminum or paper then it can be recycled and should
+return `Recycle Me!`
+
+
+*/
+
+function shouldRecycle(item) {
+  if (item.plastic && item.color !== "black") {
+    return "Recycle Me!";
+  } else if (item.color === "black" && item.plastic) {
+    return "Currently, cannot be recycled.";
+  } else if (item.aluminum) {
+    return "Recycle Me!";
+  } else if (item.paper) {
+    return "Recycle Me!";
+  }
+  return "Cannot be recycled";
+}
+
+const waterBottle = {
+  plastic: true,
+  color: "clear",
+  aluminum: false,
+  paper: false,
+};
+
+console.log(shouldRecycle(waterBottle)); // 'Recycle Me!'
