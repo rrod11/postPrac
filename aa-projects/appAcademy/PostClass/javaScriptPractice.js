@@ -3427,3 +3427,37 @@ const feedHippogriff = feedPet("Hippogriff");
 console.log(feedHippogriff("worms")); // Fed Hippogriff worms.
 console.log(feedHippogriff("crickets")); // Fed Hippogriff worms, crickets.
 console.log(feedHippogriff("chicken")); // Fed Hippogriff worms, crickets, chicken.
+
+/*
+
+Fix the function `adequateWaterTracker`. `adequateWaterTracker` should return
+true if you drank water 4 or more days in each calendar week.
+
+For example, in this week, [0, 0, 3, 1, 0, 4, 0], each day represents how many
+cups of water you drank that day. In this example, there were only 3 days where
+you drank at least one cup of water.
+
+A calendar is represented by multiple weeks,
+[[0, 0, 3, 1, 0, 4, 0], [1, 2, 1, 2, 1, 3, 1]].
+
+If you drank water for at least 4 days for every week in the calendar,
+then return true. Otherwise, return false.
+
+
+*/
+
+function adequateWaterTracker(calendar) {
+  let water;
+  for (let week of calendar) {
+    water = 0;
+    for (let day of week) {
+      if (day > 0) {
+        water++;
+      }
+    }
+    if (water < 4) {
+      return false;
+    }
+  }
+  return true;
+}
