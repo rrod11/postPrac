@@ -3503,3 +3503,12 @@ const calendar3 = [
 ];
 
 console.log(adequateWaterTracker(calendar3)); // true
+
+const calendar4 = [
+  [1, 1, 1, 1, 0, 0, 0],
+  [1, 1, 1, 0, 0, 0, 0],
+  [1, 1, 1, 1, 0, 0, 0],
+  [1, 1, 1, 1, 0, 0, 0],
+];
+
+console.log(adequateWaterTracker(calendar4)); // false
