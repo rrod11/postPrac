@@ -3461,3 +3461,24 @@ function adequateWaterTracker(calendar) {
   }
   return true;
 }
+
+// function adequateWaterTracker(calendar) {
+//   let noWater = 0;
+//   let water = 0;
+//   for (let i = 0; i < calendar.length; i++) {
+//     water = 0;
+//     const week = calendar[i];
+//     for (let j = 0; j < week.length; j++) {
+//       const day = calendar[j];
+//       if (day !== 0) {
+//         water++;
+//       } else {
+//         noWater++;
+//       }
+//     }
+//     if (water <= 3) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
