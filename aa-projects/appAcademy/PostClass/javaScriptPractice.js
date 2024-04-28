@@ -3390,3 +3390,12 @@ const saladContainer = {
 };
 
 console.log(shouldRecycle(saladContainer)); // 'Currently, cannot be recycled.'
+
+const styrofoamContainer = {
+  plastic: false,
+  color: "black",
+  aluminum: false,
+  paper: false,
+};
+
+console.log(shouldRecycle(styrofoamContainer)); // 'Cannot be recycled.'
