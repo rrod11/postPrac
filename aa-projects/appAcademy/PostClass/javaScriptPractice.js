@@ -3482,3 +3482,10 @@ function adequateWaterTracker(calendar) {
 //   }
 //   return true;
 // }
+
+const calendar1 = [
+  [0, 0, 3, 1, 0, 4, 0],
+  [1, 2, 1, 2, 1, 3, 1],
+];
+
+console.log(adequateWaterTracker(calendar1)); // false
