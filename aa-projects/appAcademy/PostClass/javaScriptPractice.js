@@ -3381,3 +3381,12 @@ const tomatoCan = {
 };
 
 console.log(shouldRecycle(tomatoCan)); // 'Recycle Me!'
+
+const saladContainer = {
+  plastic: true,
+  color: "black",
+  aluminum: false,
+  paper: false,
+};
+
+console.log(shouldRecycle(saladContainer)); // 'Currently, cannot be recycled.'
