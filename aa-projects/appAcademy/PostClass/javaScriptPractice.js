@@ -3620,3 +3620,24 @@ describe("sumToN()", function () {
     assert.strictEqual(sumToN(-8), null);
   });
 });
+
+/***********************************************************************
+Write a recursive function reverse(string) that takes in a string and returns
+it reversed.
+
+Examples:
+
+reverse("house"); // "esuoh"
+reverse("dog"); // "god"
+reverse("atom"); // "mota"
+reverse("q"); // "q"
+reverse("id"); // "di"
+reverse(""); // ""
+***********************************************************************/
+
+function reverse(str) {
+  if (str.length === 0) return "";
+
+  let fLetter = str[0];
+  return reverse(str.slice(1)) + fLetter;
+}
