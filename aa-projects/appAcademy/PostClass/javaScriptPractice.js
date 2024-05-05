@@ -3685,3 +3685,14 @@ exponent(3, 2); // 9
 exponent(2, -2); // 1/4 (or 0.25)
 exponent(5, 5); // 3125
 ***********************************************************************/
+
+function exponent(num, power) {
+  let i = 0;
+  if (i < power) {
+    return exponent(num, power - 1) * num;
+  }
+  if (i === power) return 1;
+  if (i > power) {
+    return (exponent(num, power + 1) * 1) / num;
+  }
+}
