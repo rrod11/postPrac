@@ -3848,3 +3848,13 @@ isSorted([1, 2, 4, 3, 5]); // false
 isSorted([2, 4, 6, 7, 8]); // true
 isSorted([5, 4, 3, 2, 1]); // false
 ***********************************************************************/
+
+function isSorted(arr) {
+  if (arr.length <= 1) {
+    return true;
+  }
+  if (arr[0] > arr[1]) {
+    return false;
+  }
+  return isSorted(arr.slice(1));
+}
