@@ -3927,3 +3927,16 @@ let x = [1, 2, 3];
 let y = x.slice();
 console.log(x[0] === y[0]) // true
 ***********************************************************************/
+
+function deepDup(arr) {
+  const array = [];
+
+  for (let ele of arr) {
+    if (Array.isArray(ele)) {
+      array.push(deepDup(ele));
+    } else {
+      array.push(ele);
+    }
+  }
+  return array;
+}
