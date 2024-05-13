@@ -3958,3 +3958,20 @@ Hint: For subsets([1, 2, 3]), there are two kinds of subsets:
   2. For every subset that does not contain 3, there is also a corresponding
      subset that is the same, except it also does contain 3.
 ***********************************************************************/
+
+const subsets = (arr) => {
+  if (arr.length === 0) {
+    return [[]];
+  } else {
+    const lastElement = arr[arr.length - 1];
+    const previousSubsets = subsets(arr.slice(0, -1));
+    const newSubsets = previousSubsets.map((subset) => [
+      ...subset,
+      lastElement,
+    ]);
+    return previousSubsets.concat(newSubsets);
+  }
+};
+
+console.log(subsets([])); // [[]]
+console.log(subsets([1])); // [[], [1]]
