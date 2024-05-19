@@ -4283,3 +4283,38 @@ function findDuplicatesRecursive(array, resArr = []) {
 // // [ 8, 3 ] (only one 8; order of elements does not matter)
 // console.log(findDuplicatesRecursive(["a", "word", "a", "another", "word"]));
 // // [ 'word', 'a' ] (order of elements does not matter)
+
+/* PROBLEM 3. findDuplicatesNoDefault: Must use recursion with no default parameters */
+
+// function findDuplicatesNoDefault(array) {
+//   if (array.length === 0) return dupe; // base case
+//   let arr = []; // arr to keep track of what weve seen
+//   let dupe = []; // arr to hold duplicates
+//   if (!arr.includes(array[0])) {
+//     // if tracker arr doesnt include 1st ele
+//     arr.push(array[0]); //push 1st element
+//   } else if (!dupe.includes(array[0])) {
+//     //if dup arr doesnt include 1st ele
+//     dupe.push(array[0]); // push ele to dupe array
+//   } else {
+//     return findDuplicatesNoDefault(array.slice(1)); // return array minus 1st ele
+//   }
+// }
+
+function findDuplicatesNoDefault(array) {
+  if (!array.length) return [];
+
+  let dupes = [];
+  let [first, ...rest] = array;
+  let rescurse = findDuplicatesNoDefault(rest);
+  if (rest.includes(first) && !rescurse.includes(first)) dupes.push(first);
+
+  return dupes.concat(rescurse);
+}
+
+console.log(findDuplicatesNoDefault([5, 8, 8, 2, 3]));
+// [ 8 ]
+console.log(findDuplicatesNoDefault([5, 8, 8, 8, 2, 3, 3]));
+// [ 8, 3 ] (only one 8; order of elements does not matter)
+console.log(findDuplicatesNoDefault(["a", "word", "a", "another", "word"]));
+// [ 'word', 'a' ] (order of elements does not matter)
