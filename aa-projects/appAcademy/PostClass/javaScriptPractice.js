@@ -4318,3 +4318,42 @@ console.log(findDuplicatesNoDefault([5, 8, 8, 8, 2, 3, 3]));
 // [ 8, 3 ] (only one 8; order of elements does not matter)
 console.log(findDuplicatesNoDefault(["a", "word", "a", "another", "word"]));
 // [ 'word', 'a' ] (order of elements does not matter)
+
+/* PROBLEM 4. findDuplicatesChallenge: No for/while loops OR array looping methods */
+
+// Your code here
+
+/*
+LOCAL TESTS: Run `node problems/find-duplicates.js` to run this node file,
+and debug your code using console.logs.
+
+MOCHA TESTS: Run `mocha` to run the mocha tests.
+*/
+
+// console.log(findDuplicatesIterative([ 5, 8, 8, 2, 3 ]));
+// // [ 8 ]
+// console.log(findDuplicatesIterative([ 5, 8, 8, 8, 2, 3, 3 ]));
+// // [ 8, 3 ] (only one 8; order of elements does not matter)
+// console.log(findDuplicatesIterative([ 'a', 'word', 'a', 'another', 'word' ]));
+// // [ 'word', 'a' ] (order of elements does not matter)
+
+// console.log(findDuplicatesRecursive([ 5, 8, 8, 2, 3 ]));
+// // [ 8 ]
+// console.log(findDuplicatesRecursive([ 5, 8, 8, 8, 2, 3, 3 ]));
+// // [ 8, 3 ] (only one 8; order of elements does not matter)
+// console.log(findDuplicatesRecursive([ 'a', 'word', 'a', 'another', 'word' ]));
+// // [ 'word', 'a' ] (order of elements does not matter)
+
+// console.log(findDuplicatesNoDefault([ 5, 8, 8, 2, 3 ]));
+// // [ 8 ]
+// console.log(findDuplicatesNoDefault([ 5, 8, 8, 8, 2, 3, 3 ]));
+// // [ 8, 3 ] (only one 8; order of elements does not matter)
+// console.log(findDuplicatesNoDefault([ 'a', 'word', 'a', 'another', 'word' ]));
+// // [ 'word', 'a' ] (order of elements does not matter)
+
+// console.log(findDuplicatesChallenge([ 5, 8, 8, 2, 3 ]));
+// // [ 8 ]
+// console.log(findDuplicatesChallenge([ 5, 8, 8, 8, 2, 3, 3 ]));
+// // [ 8, 3 ] (only one 8; order of elements does not matter)
+// console.log(findDuplicatesChallenge([ 'a', 'word', 'a', 'another', 'word' ]));
+// // [ 'word', 'a' ] (order of elements does not matter)
