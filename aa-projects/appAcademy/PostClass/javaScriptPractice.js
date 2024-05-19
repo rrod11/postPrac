@@ -4389,3 +4389,18 @@ rl.question("What's up, doc? ", (firstAnswer) => {
     rl.close();
   });
 });
+
+rl.question("What's up, doc? ", (firstAnswer) => {
+  console.log(firstAnswer + " is up.");
+
+  rl.question("What's down, clown? ", (secondAnswer) => {
+    console.log(secondAnswer + " is down.");
+
+    rl.question("What's left, Jeff? ", (thirdAnswer) => {
+      console.log(thirdAnswer + " is left.");
+      rl.close();
+    });
+  });
+});
+
+rl.question("What's up, doc? ", handleResponseOne);
