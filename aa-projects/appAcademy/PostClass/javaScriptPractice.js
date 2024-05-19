@@ -4357,3 +4357,18 @@ MOCHA TESTS: Run `mocha` to run the mocha tests.
 // // [ 8, 3 ] (only one 8; order of elements does not matter)
 // console.log(findDuplicatesChallenge([ 'a', 'word', 'a', 'another', 'word' ]));
 // // [ 'word', 'a' ] (order of elements does not matter)
+
+const readline = require("readline");
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+// rl.question("What's up, doc? ", (answer) => {
+//   console.log("you responded: " + answer);
+//   rl.close();
+// });
+
+// // try to print 'DONE!' after the question
+// console.log("DONE!");
