@@ -4404,3 +4404,18 @@ rl.question("What's up, doc? ", (firstAnswer) => {
 });
 
 rl.question("What's up, doc? ", handleResponseOne);
+
+function handleResponseOne(firstAnswer) {
+  console.log(firstAnswer + " is up.");
+  rl.question("What's down, clown? ", handleResponseTwo);
+}
+
+function handleResponseTwo(secondAnswer) {
+  console.log(secondAnswer + " is down.");
+  rl.question("What's left, Jeff? ", handleResponseThree);
+}
+
+function handleResponseThree(thirdAnswer) {
+  console.log(thirdAnswer + " is left.");
+  rl.close();
+}
