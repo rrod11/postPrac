@@ -4187,3 +4187,70 @@ console.log(makeChange(75)); // Output: [25, 25, 25]
 console.log(makeChange(33, [15, 3])); // Output: [3, 15, 15]
 console.log(makeChange(34, [15, 3])); // Output: null
 console.log(makeChange(24, [10, 7, 1])); // Output: [7, 7, 10]
+
+/***********************************************************************
+**PROBLEM 1: findDuplicatesIterative (1 point)**
+Write a function `findDuplicatesIterative`. The function should take an
+inputArray (array) and return an array including all items from the inputArray
+that appear more than once. However, the returned array must NOT have any
+duplicates within it.
+
+For example:
+
+findDuplicatesIterative([ 5, 8, 8, 2, 3 ]);
+// [ 8 ]
+findDuplicatesIterative([ 5, 8, 8, 8, 2, 3, 3 ]);
+// [ 8, 3 ] (only one 8; order of elements does not matter)
+findDuplicatesIterative([ 'a', 'word', 'a', 'another', 'word' ]);
+// [ 'word', 'a' ] (order of elements does not matter)
+
+A successful solution will pass the first mocha test.
+
+**PROBLEM 2: findDuplicatesRecursive (1 point)**
+Write a function `findDuplicatesRecursive`. The function should have the same
+output as the first function, but MUST use recursion WITH a default parameter
+to find the duplicates.
+
+A successful solution will pass the second mocha test.
+
+**PROBLEM 3: findDuplicatesNoDefault (1 point)**
+Write a function `findDuplicatesNoDefault`. The function should have the same
+output as the first two functions, but MUST use recursion to find the duplicates.
+In addition, you MAY NOT use any default parameters in your solution. You should
+only use a single parameter, the inputArray.
+
+A successful solution will pass the third mocha test.
+
+**PROBLEM 4: findDuplicatesChallenge (1 point)**
+Write a function `findDuplicatesChallenge`. This function must use recursion,
+similar to the second and third function. To pass the fourth mocha test, the
+solution code must meet the following constraints:
+
+- There must be NO loop within the function
+  - You may NOT use FOR or WHILE loops
+- There must be NO array looping methods
+  - You may NOT use .map, .forEach, .filter, .find, .sort, or .includes
+
+***********************************************************************/
+
+/* PROBLEM 1. findDuplicatesIterative: Must solve with iteration, not recursion */
+
+function findDuplicatesIterative(array) {
+  let arr = [];
+  let obj = [];
+  for (let ele of array) {
+    if (!obj.includes(ele)) {
+      obj.push(ele);
+    } else if (!arr.includes(ele)) {
+      arr.push(ele);
+    }
+  }
+  return arr;
+}
+
+// console.log(findDuplicatesIterative([5, 8, 8, 2, 3]));
+// // [ 8 ]
+// console.log(findDuplicatesIterative([5, 8, 8, 8, 2, 3, 3]));
+// // [ 8, 3 ] (only one 8; order of elements does not matter)
+// console.log(findDuplicatesIterative(["a", "word", "a", "another", "word"]));
+// // [ 'word', 'a' ] (order of elements does not matter)
