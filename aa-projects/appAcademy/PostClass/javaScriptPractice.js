@@ -4419,3 +4419,13 @@ function handleResponseThree(thirdAnswer) {
   console.log(thirdAnswer + " is left.");
   rl.close();
 }
+
+// FUNCTION EXPRESSION
+//- storing an anonymous function in a variable
+//- we can alias the function with that variable weve stored in js
+
+let sayHi = function () {
+  console.log("Hi");
+};
+
+// sayHi();
