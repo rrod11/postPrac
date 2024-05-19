@@ -4254,3 +4254,32 @@ function findDuplicatesIterative(array) {
 // // [ 8, 3 ] (only one 8; order of elements does not matter)
 // console.log(findDuplicatesIterative(["a", "word", "a", "another", "word"]));
 // // [ 'word', 'a' ] (order of elements does not matter)
+
+/* PROBLEM 2. findDuplicatesRecursive: Must solve with recursion */
+
+// function findDuplicatesRecursive(array, i = 0, arr = [], dupe = []) {
+//   if (array.length < i) return dupe;
+//   let curr = array[i];
+//   if (!arr.includes(curr)) {
+//     arr.push(curr);
+//   } else if (!dupe.includes(curr)) {
+//     dupe.push(curr);
+//   }
+//   return findDuplicatesRecursive(array, i + 1, arr, dupe);
+// }
+
+function findDuplicatesRecursive(array, resArr = []) {
+  if (!array.length) return resArr;
+  let currEle = array.pop();
+  if (array.includes(currEle) && !resArr.includes(currEle)) {
+    resArr.push(currEle);
+  }
+  return findDuplicatesRecursive(array, resArr);
+}
+
+// console.log(findDuplicatesRecursive([5, 8, 8, 2, 3]));
+// // [ 8 ]
+// console.log(findDuplicatesRecursive([5, 8, 8, 8, 2, 3, 3]));
+// // [ 8, 3 ] (only one 8; order of elements does not matter)
+// console.log(findDuplicatesRecursive(["a", "word", "a", "another", "word"]));
+// // [ 'word', 'a' ] (order of elements does not matter)
