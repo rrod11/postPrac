@@ -4526,3 +4526,24 @@ let result1 = outer();
 result2 = inner();
 
 console.log(result1 === result2); // ???
+
+const readline = require("readline");
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+// rl.question("What's up, doc? ", (answer) => {
+//   console.log("you responded: " + answer);
+//   rl.close();
+// });
+
+// // try to print 'DONE!' after the question
+// console.log("DONE!");
+
+rl.question("What's up, doc? ", (answer) => {
+  console.log("you responded: " + answer);
+  rl.close();
+  console.log("DONE!");
+});
