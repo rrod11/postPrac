@@ -4443,3 +4443,8 @@ let sayHi2 = () => console.log("DJ KHALED SCREAMS: ANOTHER ONE!!!");
 (function () {
   console.log("HIIIIII");
 })();
+
+// FAT ARROW IFFE
+let djK = (() => {
+  return "DJ KHALED again screams: ANOTHER ONE!!!";
+})();
