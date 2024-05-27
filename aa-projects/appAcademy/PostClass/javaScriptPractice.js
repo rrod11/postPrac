@@ -4460,3 +4460,51 @@ console.log(sayGoodMorning);
 console.log(sayGoodMorning);
 console.log(djK);
 console.log(djK);
+
+/*
+!! HOISTING !!
+    -- LET, CONST, VAR
+        * var -> hoist the declaration but not the assignment, has a default value of undefined
+        * let && const -> hoist the declaration, but does not have a value. returns an error if you try to access before initialization
+    HOISTING WITH FUNCTIONS
+*/
+
+// function hoistVar() {
+//   console.log(name);
+//   var name = "Roddy";
+// }
+
+// //hoistVar(); // undefined
+
+// function hoistConstAndLet() {
+//   console.log(name);
+//   // let name = 'Roddy'
+//   const name = "Roddy";
+// }
+
+// hoistConstAndLet(); // ReferenceError: cannot access before initialization
+
+//function declaration
+
+// hoisted(); // prints hoisted
+// function hoisted() {
+//   console.log("hoisted");
+// }
+
+// console.log(hoisted()); // prints hoisted
+
+// function dogParty() {
+//   if (true) {
+//     let dog = "Rupert";
+//     const dog = "Fluffy";
+//     var dog = "Poodle";
+//   }
+
+//   return dog;
+// }
+
+// console.log(dogParty()); // ???
+function sayPuppy() {
+  const puppy = "Wolfie";
+  return puppy;
+}
