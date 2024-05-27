@@ -4508,3 +4508,21 @@ function sayPuppy() {
   const puppy = "Wolfie";
   return puppy;
 }
+
+sayPuppy(); // "Wolfie"
+
+function inner() {
+  let str = "hello";
+  return str;
+}
+
+function outer() {
+  let test = inner();
+  return test;
+}
+
+let result1 = outer();
+
+result2 = inner();
+
+console.log(result1 === result2); // ???
