@@ -4429,3 +4429,9 @@ let sayHi = function () {
 };
 
 // sayHi();
+
+/ FUNCTION EXPRESSINO WITH FAT ARROW SYNTAX
+
+let sayHi2 = () => console.log("DJ KHALED SCREAMS: ANOTHER ONE!!!");
+
+// sayHi2();
