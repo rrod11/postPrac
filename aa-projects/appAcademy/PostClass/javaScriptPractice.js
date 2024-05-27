@@ -4547,3 +4547,29 @@ rl.question("What's up, doc? ", (answer) => {
   rl.close();
   console.log("DONE!");
 });
+
+// ask question one
+rl.question("What's up, doc? ", (firstAnswer) => {
+  console.log(firstAnswer + " is up.");
+
+  // only after the user responds to question one, then ask question two
+  rl.question("What's down, clown? ", (secondAnswer) => {
+    console.log(secondAnswer + " is down.");
+    rl.close();
+  });
+});
+
+rl.question("What's up, doc? ", (firstAnswer) => {
+  console.log(firstAnswer + " is up.");
+
+  rl.question("What's down, clown? ", (secondAnswer) => {
+    console.log(secondAnswer + " is down.");
+
+    rl.question("What's left, Jeff? ", (thirdAnswer) => {
+      console.log(thirdAnswer + " is left.");
+      rl.close();
+    });
+  });
+});
+
+rl.question("What's up, doc? ", handleResponseOne);
