@@ -4435,3 +4435,11 @@ let sayHi = function () {
 let sayHi2 = () => console.log("DJ KHALED SCREAMS: ANOTHER ONE!!!");
 
 // sayHi2();
+
+// AN IFFE IS THE ANONYMOUS PORTION WRAPPED IN PARENTHESIS
+
+//IIFE
+
+(function () {
+  console.log("HIIIIII");
+})();
