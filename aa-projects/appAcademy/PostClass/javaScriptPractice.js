@@ -4448,3 +4448,8 @@ let sayHi2 = () => console.log("DJ KHALED SCREAMS: ANOTHER ONE!!!");
 let djK = (() => {
   return "DJ KHALED again screams: ANOTHER ONE!!!";
 })();
+
+//You can pass arguments to an IIFE
+let sayGoodMorning = ((name) => {
+  return `Good MOOOORRRNINNNNNG ${name}!!!!`;
+})("Roderick");
