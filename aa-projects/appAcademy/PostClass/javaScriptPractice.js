@@ -4453,3 +4453,10 @@ let djK = (() => {
 let sayGoodMorning = ((name) => {
   return `Good MOOOORRRNINNNNNG ${name}!!!!`;
 })("Roderick");
+
+//IIFE will only rrun the console.log  in the function ONCE!!
+
+console.log(sayGoodMorning);
+console.log(sayGoodMorning);
+console.log(djK);
+console.log(djK);
