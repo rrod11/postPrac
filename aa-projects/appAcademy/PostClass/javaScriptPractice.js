@@ -4671,3 +4671,14 @@ console.log(arr); // [ 'd', 'e', 'a', 'b', 'c' ]
 let animals = ["wombat", "koala", "opossum", "kangaroo"];
 rotate(animals, -1);
 console.log(animals); // [ 'koala', 'opossum', 'kangaroo', 'wombat' ]
+
+function countVowels(word) {
+  const vowels = "aeiouAEIOU";
+  let count = 0;
+  for (let i = 0; i < word.length; i++) {
+    if (vowels.includes(word[i])) {
+      count++;
+    }
+  }
+  return count;
+}
