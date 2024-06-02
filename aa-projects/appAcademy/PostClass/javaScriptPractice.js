@@ -4588,3 +4588,64 @@ function handleResponseThree(thirdAnswer) {
   console.log(thirdAnswer + " is left.");
   rl.close();
 }
+
+// THE PROBLEM
+// Write a function named smoothieMachine that accepts any number of parameters, and a function. The return function will also accept any number of parameters and will return a string including all of the parameters of smoothieMachine and the return function.
+
+// -WE NEED A FUNCTION THAT CAN ACCEPT AN UNKNOWN NUMBER OF PARAMETERS
+// -FUNCTION NEEDS TO RETURN A STRING WITH ALL OF THE PARAMETERS
+
+// - FIRST NEED A FUNC
+// - SET IT UP AS A RECURSIVE FUNC
+// - BASE CASE WILL BE THE CASE OF NO PARAMETERS BEING PASSED
+// - RECURSIVE STEP WILL BE SLICING THE UNKNOWN PARAMATERS AT INDEX 1 AND RETURNING THE INDEX AT 0
+// - RETURN WILL BE THE STRING INCLUDING ALL PARAMETERS
+
+// const smoothieMachine = (...params) => {
+//   //want to check if the parameters are strings
+//   ingredients = params.filter((el) => typeof el === "string");
+//   //create a closer to access the array created above in the return
+
+//   return function (...addOn) {
+//     // allows us to store smoothie machine into a variable and add on new components
+//     let added = addOn.filter((ele) => typeof ele === "string");
+//     // creates another array with the newly added ingredients
+//     ingredients.push(...added);
+//     //adds the newly added ingredients to the old ingredient array
+//     if (ingredients.length === 0) {
+//       // if the array that has been created doesnt contain anything we return the following statement
+//       return `There are no ingredients in the smoothie`;
+//     }
+//     //otherwise return a statement that lists the ingredients seperated by and in a string
+//     return `I'm having a smoothie with ${ingredients.join(" and ")}`;
+//   };
+// };
+// let smoothie1 = smoothieMachine(); // returns a function
+// console.log(smoothie1("milk")); // returns "I'm having a smoothie with milk"
+// console.log(smoothie1("kale", "spinach")); // returns "I'm having a smoothie with milk and kale and spinach"
+// console.log(smoothie1("honey", "pears", "berries")); // returns "I'm having a smoothie with milk and kale and spinach and honey and pears and berries"
+
+// let smoothie2 = smoothieMachine("apples", "bananas", "berries"); // returns a function
+// console.log(smoothie2("pineapple")); // returns "I'm having a smoothie with apples and bananas and berries and pineapple"
+
+// let smoothie3 = smoothieMachine(); // returns a function
+// console.log(smoothie3()); // returns "There are no ingredients in the smoothie!"
+///////
+function caesarCipher(string, num) {
+  const alphabet = "abcdefghijklmnopqrstuvwxyz";
+  let newString = [];
+  if (string.length === 0) {
+    return "";
+  }
+  let oldIdx = alphabet.indexOf(string[0]);
+  let newIdx = oldIdx + num;
+  let newChar = alphabet[newIdx % alphabet.length];
+  newString.push(newChar);
+
+  return newString.join("") + caesarCipher(string.slice(1), num);
+}
+
+console.log(caesarCipher("apple", 1)); // "bqqmf"
+console.log(caesarCipher("bootcamp", 2)); // "dqqvecor"
+console.log(caesarCipher("zebra", 4)); // "difve"
+//////
