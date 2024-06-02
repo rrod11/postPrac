@@ -4573,3 +4573,8 @@ rl.question("What's up, doc? ", (firstAnswer) => {
 });
 
 rl.question("What's up, doc? ", handleResponseOne);
+
+function handleResponseOne(firstAnswer) {
+  console.log(firstAnswer + " is up.");
+  rl.question("What's down, clown? ", handleResponseTwo);
+}
