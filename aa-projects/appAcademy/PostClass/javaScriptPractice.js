@@ -4583,3 +4583,8 @@ function handleResponseTwo(secondAnswer) {
   console.log(secondAnswer + " is down.");
   rl.question("What's left, Jeff? ", handleResponseThree);
 }
+
+function handleResponseThree(thirdAnswer) {
+  console.log(thirdAnswer + " is left.");
+  rl.close();
+}
