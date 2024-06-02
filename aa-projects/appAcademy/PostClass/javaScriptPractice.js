@@ -4727,3 +4727,9 @@ function countVowels(word) {
 //PLAN:
 //- write skeleton of outer function
 //- write skelton of inner function
+
+function dynamicDivider(divisor) {
+  return function (num) {
+    return num / divisor;
+  };
+}
