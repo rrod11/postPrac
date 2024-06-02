@@ -4649,3 +4649,17 @@ console.log(caesarCipher("apple", 1)); // "bqqmf"
 console.log(caesarCipher("bootcamp", 2)); // "dqqvecor"
 console.log(caesarCipher("zebra", 4)); // "difve"
 //////
+function rotate(arr, num) {
+  if (num === 0) {
+    return arr;
+  }
+  if (num > 0) {
+    let lastEl = arr.pop();
+    arr.unshift(lastEl);
+    return rotate(arr, num - 1);
+  } else {
+    let firstEl = arr.shift();
+    arr.push(firstEl);
+    return rotate(arr, num + 1);
+  }
+}
