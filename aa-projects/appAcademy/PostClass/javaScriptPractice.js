@@ -4663,3 +4663,7 @@ function rotate(arr, num) {
     return rotate(arr, num + 1);
   }
 }
+
+let arr = ["a", "b", "c", "d", "e"];
+rotate(arr, 2);
+console.log(arr); // [ 'd', 'e', 'a', 'b', 'c' ]
