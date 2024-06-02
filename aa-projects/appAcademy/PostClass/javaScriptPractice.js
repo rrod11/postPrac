@@ -4682,3 +4682,48 @@ function countVowels(word) {
   }
   return count;
 }
+
+// function mostVowels(sentence, maxVowels = 0, wordWithMaxVowels = "") {
+//   // Base case: If the sentence is empty, return the word with max vowels
+//   if (!sentence) {
+//     return wordWithMaxVowels;
+//   }
+
+//   // Separate the first word from the rest of the sentence
+//   const wordEndIndex = sentence.indexOf(" ");
+//   let currentWord, remainingSentence;
+//   if (wordEndIndex !== -1) {
+//     currentWord = sentence.slice(0, wordEndIndex);
+//     remainingSentence = sentence.slice(wordEndIndex + 1);
+//   } else {
+//     currentWord = sentence;
+//     remainingSentence = "";
+//   }
+
+//   // Count vowels in the current word
+//   const vowelsCount = countVowels(currentWord);
+
+//   // Update maxVowels and wordWithMaxVowels if needed
+//   if (vowelsCount > maxVowels) {
+//     maxVowels = vowelsCount;
+//     wordWithMaxVowels = currentWord;
+//   }
+
+//   // Recursively call the function with the remaining sentence
+//   return mostVowels(remainingSentence, maxVowels, wordWithMaxVowels);
+// }
+
+// // Example usage:
+// const sentence = "Hello there, how are you today?";
+// console.log(mostVowels(sentence)); // Output: "today"
+
+// Write a function named dynamicDivider(divisor). When invoked the dynamicDivider function will intake a number to be used as a divisor and will then return a new function. The function returned by dynamicDivider will accept a number - and that number will then be divided by the divisor that was defined when the dynamicDivider was first invoked.
+
+// Examples:
+
+//POLYS
+//input: number
+//output: function that takes another number
+//PLAN:
+//- write skeleton of outer function
+//- write skelton of inner function
