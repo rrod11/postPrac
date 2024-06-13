@@ -4820,3 +4820,20 @@ CALL STACK - TRACKS THE CURRENT TASK IN PROGRESS
 // }
 
 // setTimeout(sayHi, 2500, "roddy");
+
+
+// function sayHello(name1, name2) {
+//   console.log(`hello ${name1} and ${name2}`);
+// }
+
+// setTimeout(sayHello, 2500, "roddy", "roderick");
+
+// //anon callback
+// setTimeout(
+//   (name1, name2) => {
+//     console.log(`hello + ${name1} and ${name2}`);
+//   },
+//   4000,
+//   "rod",
+//   "roddy"
+// );
