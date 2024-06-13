@@ -4866,3 +4866,23 @@ CALL STACK - TRACKS THE CURRENT TASK IN PROGRESS
 
 // * is this actually recursing
 //** technically it is calling itself but no its not recursion */
+
+//** PSEUDORECURSION */
+function delayedPrinter(delayedArr) {
+  if (!delayedArr.length) return;
+  const currentDelay = delayedArr.shift();
+  console.log(currentDelay);
+
+  //setTimeout(cb function, delay in milliseconds, param1, param2)
+  //delayedprinter(delaysarr)
+
+  setTimeout(delayedPrinter, currentDelay, delayedArr);
+  //**ALT SYNTAX USING ANON CALLBACK */
+  //   setTimeout(
+  //     () => {
+  //       delayedPrinter(delayedArr);
+  //     },
+  //     currentDelay,
+  //     delayedArr
+  //   );
+}
