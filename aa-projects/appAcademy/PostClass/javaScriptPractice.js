@@ -4760,3 +4760,19 @@ function dynamicDivider(divisor) {
 // // foo("Hey Programmers", bar, function (s) {
 // //   return s.toUpperCase() + "!";
 // // });
+
+// let foo = function () {
+//   console.log("hello");
+//   return 42;
+// };
+
+// console.log(foo);
+
+// function asyncy(cb) {
+//   setTimeout(cb, 1000);
+//   console.log("async");
+// }
+
+// function greet() {
+//   console.log("hello!");
+// }
