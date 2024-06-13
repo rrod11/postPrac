@@ -4854,3 +4854,15 @@ CALL STACK - TRACKS THE CURRENT TASK IN PROGRESS
 //   1000,
 //   "mocha"
 // );
+
+
+
+//we can use this timer variable which holds a timer object to prevent the code from running
+// console.log(timer);
+/*
+//rcursion with timeoUt
+//we want to print the number and use the number as the delay for a settimeout
+*/
+
+// * is this actually recursing
+//** technically it is calling itself but no its not recursion */
