@@ -4837,3 +4837,20 @@ CALL STACK - TRACKS THE CURRENT TASK IN PROGRESS
 //   "rod",
 //   "roddy"
 // );
+
+
+//make sure when passing arguments to a setTimeout you are either passing a function name or anonymous function itself
+//* examples above
+
+//! don't pass an invoked function to a settimeout
+//* that would be passing the return value of a function to a callback
+// setTimeout(sayHi(), 3000, "brady", "robert");
+//[ERR_INVALID_CALLBACK] CALLBACK MUST BE A FUNCTION. RECIEVED UNDEFINED
+
+// let timer = setTimeout(
+//   (name) => {
+//     console.log(`hello ${name}`);
+//   },
+//   1000,
+//   "mocha"
+// );
