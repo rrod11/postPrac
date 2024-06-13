@@ -4776,3 +4776,17 @@ function dynamicDivider(divisor) {
 // function greet() {
 //   console.log("hello!");
 // }
+
+// async(greet);
+
+/*
+WHAT IS THE EVENT LOOP
+    *Consists of the call stack and the message queue
+    *Event loop checks if the call stack is empty; if it is it'll dequeue any task within the message queue and push it onto the stack
+
+CALL STACK - TRACKS THE CURRENT TASK IN PROGRESS
+    *synchronous task
+    *last in first out
+    *add to stack - push
+    *remove from the stack - pop
+    *stack structure
