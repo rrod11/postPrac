@@ -4743,3 +4743,20 @@ function dynamicDivider(divisor) {
 // setTimeout(() => {
 //   console.log("third");
 // }, 0);
+
+// console.log("fourth");
+
+// //first -> fourth -> third -> second
+
+// // let bar = function (s) {
+// //   return s.toLowerCase() + "...";
+// // };
+
+// // let foo = function (message, cb1, cb2) {
+// //   console.log(cb1(message));
+// //   console.log(cb2(message));
+// // };
+
+// // foo("Hey Programmers", bar, function (s) {
+// //   return s.toUpperCase() + "!";
+// // });
