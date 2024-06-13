@@ -4733,3 +4733,13 @@ function dynamicDivider(divisor) {
     return num / divisor;
   };
 }
+
+// console.log("first");
+
+// setTimeout(() => {
+//   console.log("second");
+// }, 5000);
+
+// setTimeout(() => {
+//   console.log("third");
+// }, 0);
