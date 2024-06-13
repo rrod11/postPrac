@@ -4803,3 +4803,20 @@ CALL STACK - TRACKS THE CURRENT TASK IN PROGRESS
 //   console.log("hello");
 // }
 // global.setTimeout(hello, 5000);
+
+
+
+// //after 1 second I want to pass to the console.log function the argument sup
+// setTimeout(console.log, 1000, "sup");
+
+// function time() {
+//   console.log("time is up");
+// }
+
+// setTimeout(time, 4000);
+
+// function sayHi(name) {
+//   console.log(`hi ${name}`);
+// }
+
+// setTimeout(sayHi, 2500, "roddy");
