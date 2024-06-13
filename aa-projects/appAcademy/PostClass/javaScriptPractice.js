@@ -4790,3 +4790,16 @@ CALL STACK - TRACKS THE CURRENT TASK IN PROGRESS
     *add to stack - push
     *remove from the stack - pop
     *stack structure
+
+
+    // Show global object  and all its methods
+// console.log(global);
+
+//setTimeout is a method on the global object
+//we can access it like so
+//but the developers have made it easy for use and we don't need to key into the global object
+// * call the setTimeout passing this function and call it after 5 seconds
+// function hello() {
+//   console.log("hello");
+// }
+// global.setTimeout(hello, 5000);
