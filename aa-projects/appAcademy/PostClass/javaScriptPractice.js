@@ -4997,3 +4997,9 @@ function bottlesOfBeerOnTheWall(num) {
 // let value;
 
 // console.log(value);
+
+console.log("hello"); // line 1
+setTimeout(() => {
+  console.log("third");
+}, 0);
+console.log("world"); // line 3
