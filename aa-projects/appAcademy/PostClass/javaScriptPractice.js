@@ -4893,3 +4893,15 @@ const delaysArr = [1000, 900, 800, 700, 600, 500, 400, 300, 200, 100];
 
 //.forEach doesnt care about the order in which you send callsbacks to the node api
 //* delays are sent to the message queue all at the same time
+
+function delayedPrinter2(delaysArr) {
+  let totalDelay = 0;
+  delaysArr.forEach((delay) => {
+    totalDelay += delay;
+    setTimeout(() => {
+      console.log(delay);
+    }, totalDelay);
+  });
+}
+
+// delayedPrinter2(delaysArr);
