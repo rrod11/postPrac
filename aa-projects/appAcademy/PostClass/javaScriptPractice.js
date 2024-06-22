@@ -4925,3 +4925,15 @@ function delayedPrinter2(delaysArr) {
 function food(food1, food2) {
   console.log(`I ate ${food1} and ${food2}`);
 }
+
+// setInterval(food, 1000, "pizza", "fries");
+
+// function timeMaker(count) {
+//   let timer = setInterval(() => {
+//     console.log(count);
+//     count--;
+//     if (count === 0) {
+//       return clearInterval(timer);
+//     }
+//   }, 1000);
+// }
