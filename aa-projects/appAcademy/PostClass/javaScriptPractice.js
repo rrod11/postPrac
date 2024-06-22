@@ -4905,3 +4905,19 @@ function delayedPrinter2(delaysArr) {
 }
 
 // delayedPrinter2(delaysArr);
+
+/*
+//SET INTERVAL
+    *The global set INTERVAL method repeatedly executes a function or specified piece of code with a fixed time delay between each call
+    *The returned timeoutID is a positive integer value which identifies the timer created by the call to setTimeout()
+        *this value can be passed to clearInterval() to cancel the timeout
+    *Syntax
+        *setInterval(callbackFunction, delayInMilliseconds, param1, param2, paramN)
+
+    !If youw want to convert from millisecond to seconds
+        *just divide by a thousand
+            *Ex: 5000ms -> 5s
+    WHAT DOES A SETTIMEOUT RETURN?
+        * This method returns an interval ID which uniquely identidies the interval, so you can remove it later by calling clearInterval
+
+*/
