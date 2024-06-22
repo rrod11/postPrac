@@ -4921,3 +4921,7 @@ function delayedPrinter2(delaysArr) {
         * This method returns an interval ID which uniquely identidies the interval, so you can remove it later by calling clearInterval
 
 */
+
+function food(food1, food2) {
+  console.log(`I ate ${food1} and ${food2}`);
+}
