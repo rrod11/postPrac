@@ -1627,10 +1627,10 @@ print all its values.
 
 // console.log(result);
 
-let arr = [1, 1, 3, 2, 2, 1];
+let arr1 = [1, 1, 3, 2, 2, 1];
 //         0  1  2  3  4  5
 
-const result = arr.reduce(callback, {});
+const result = arr1.reduce(callback, {});
 
 function callback(acc, elem, index, array) {
   console.log("------------------");
@@ -4945,3 +4945,45 @@ const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
+
+rl.question(`How many beers are on the wall?`, bottlesOfBeerOnTheWall);
+
+function bottlesOfBeerOnTheWall(num) {
+  //base case
+  if (num === 0) {
+    console.log(`Aint no bottles of beer on the wall.... 🦆`);
+    return;
+  }
+
+  if (num > 1) {
+    console.log(`${num} bottles of beer on the wall.... 🍺`);
+  } else {
+    console.log(`${num} bottle of beer on the wall.... 🍺`);
+  }
+
+  if (num > 1) {
+    setTimeout(console.log, 1000, `${num} bottles of beer...`);
+  } else {
+    setTimeout(console.log, 1000, `${num} bottle of beer...`);
+  }
+  setTimeout(console.log, 2000, "");
+
+  setTimeout(console.log, 3000, `Take one down and pass it around🍺`);
+
+  // ternary => condition ? if true : if false
+
+  num == 2
+    ? setTimeout(
+        console.log,
+        4000,
+        `${num - 1} bottle of beer on the wall.... 🍺`
+      )
+    : setTimeout(
+        console.log,
+        4000,
+        `${num - 1} bottles of beer on the wall.... 🍺`
+      );
+
+  //recursive step and call
+  setTimeout(bottlesOfBeerOnTheWall, 5000, num - 1);
+}
