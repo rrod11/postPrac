@@ -4989,3 +4989,11 @@ function bottlesOfBeerOnTheWall(num) {
 }
 
 // bottlesOfBeerOnTheWall(4);
+
+// if ("") {
+//   console.log("11");
+// }
+
+// let value;
+
+// console.log(value);
