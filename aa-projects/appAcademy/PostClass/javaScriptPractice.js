@@ -4987,3 +4987,5 @@ function bottlesOfBeerOnTheWall(num) {
   //recursive step and call
   setTimeout(bottlesOfBeerOnTheWall, 5000, num - 1);
 }
+
+// bottlesOfBeerOnTheWall(4);
