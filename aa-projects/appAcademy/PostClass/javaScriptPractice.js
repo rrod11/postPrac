@@ -5039,3 +5039,9 @@ console.log(makeAnimalSound("DUCK", "QUACK")); // => "DUCK goes QUACK!"
 //     setTimeout(console.log, 5000, "BITCH!");
 //   });
 // });
+
+const readline = require("readline");
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
