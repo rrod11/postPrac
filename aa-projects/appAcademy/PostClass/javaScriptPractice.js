@@ -5003,3 +5003,9 @@ setTimeout(() => {
   console.log("third");
 }, 0);
 console.log("world"); // line 3
+
+// console.log(sayGoodbye("Jeff"));
+
+// const sayGoodbye = function (name) {
+//   return `Goodbye ${name}`;
+// };
