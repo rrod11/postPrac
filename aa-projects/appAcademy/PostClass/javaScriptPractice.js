@@ -5021,3 +5021,4 @@ function makeAnimalSound(str1, str2) {
 }
 
 console.log(makeAnimalSound("cow", "moo")); // => "cow goes moo!"
+console.log(makeAnimalSound("DUCK", "QUACK")); // => "DUCK goes QUACK!"
