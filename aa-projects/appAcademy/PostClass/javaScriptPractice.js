@@ -5022,3 +5022,20 @@ function makeAnimalSound(str1, str2) {
 
 console.log(makeAnimalSound("cow", "moo")); // => "cow goes moo!"
 console.log(makeAnimalSound("DUCK", "QUACK")); // => "DUCK goes QUACK!"
+
+// const readline = require("readline");
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout,
+// });
+
+// rl.question(`What's poppin slime`, (answerone) => {
+//   console.log(`you responded: ${answerone}`);
+//   rl.question(`And if they're tripping?`, (answertwo) => {
+//     console.log(`you responded: ${answertwo} five`);
+
+//     rl.close();
+//     console.log(`IF YOU GOT EYES LOOK AT ME NOW...........`);
+//     setTimeout(console.log, 5000, "BITCH!");
+//   });
+// });
