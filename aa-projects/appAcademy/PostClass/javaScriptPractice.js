@@ -5019,3 +5019,5 @@ examples for more information.
 function makeAnimalSound(str1, str2) {
   return `${str1} goes ${str2}!`;
 }
+
+console.log(makeAnimalSound("cow", "moo")); // => "cow goes moo!"
