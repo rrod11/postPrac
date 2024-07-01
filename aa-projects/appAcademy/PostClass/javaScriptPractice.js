@@ -5052,3 +5052,11 @@ function responseOne(firstAnswer) {
   console.log(`${firstAnswer}`);
   rl.question(`And if they hating?`, responseTwo);
 }
+
+function responseTwo(secondAnswer) {
+  console.log(`${secondAnswer} five`);
+  rl.question(
+    `I aint got time to shuck and jive! These niggas sweet as?`,
+    responseThree
+  );
+}
