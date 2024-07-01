@@ -5045,3 +5045,5 @@ const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
+
+rl.question(`Whats poppin slime?`, responseOne);
