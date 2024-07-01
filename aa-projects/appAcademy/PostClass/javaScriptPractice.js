@@ -5015,3 +5015,7 @@ Write a function makeAnimalSound(animal, sound) that accepts two strings. Use
 string interpolation to return a new string using both arguments.  See the
 examples for more information.
 */
+
+function makeAnimalSound(str1, str2) {
+  return `${str1} goes ${str2}!`;
+}
