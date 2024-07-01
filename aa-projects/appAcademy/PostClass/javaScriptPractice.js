@@ -5047,3 +5047,8 @@ const rl = readline.createInterface({
 });
 
 rl.question(`Whats poppin slime?`, responseOne);
+
+function responseOne(firstAnswer) {
+  console.log(`${firstAnswer}`);
+  rl.question(`And if they hating?`, responseTwo);
+}
