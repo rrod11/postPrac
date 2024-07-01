@@ -5009,3 +5009,9 @@ console.log("world"); // line 3
 // const sayGoodbye = function (name) {
 //   return `Goodbye ${name}`;
 // };
+
+/*
+Write a function makeAnimalSound(animal, sound) that accepts two strings. Use
+string interpolation to return a new string using both arguments.  See the
+examples for more information.
+*/
