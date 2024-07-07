@@ -4360,7 +4360,7 @@ MOCHA TESTS: Run `mocha` to run the mocha tests.
 
 const readline = require("readline");
 
-const rl = readline.createInterface({
+const rl1 = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
@@ -4373,14 +4373,14 @@ const rl = readline.createInterface({
 // // try to print 'DONE!' after the question
 // console.log("DONE!");
 
-rl.question("What's up, doc? ", (answer) => {
+rl1.question("What's up, doc? ", (answer) => {
   console.log("you responded: " + answer);
   rl.close();
   console.log("DONE!");
 });
 
 // ask question one
-rl.question("What's up, doc? ", (firstAnswer) => {
+rl1.question("What's up, doc? ", (firstAnswer) => {
   console.log(firstAnswer + " is up.");
 
   // only after the user responds to question one, then ask question two
@@ -4529,7 +4529,7 @@ console.log(result1 === result2); // ???
 
 const readline = require("readline");
 
-const rl = readline.createInterface({
+const rl11 = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
@@ -5041,7 +5041,7 @@ console.log(makeAnimalSound("DUCK", "QUACK")); // => "DUCK goes QUACK!"
 // });
 
 const readline = require("readline");
-const rl = readline.createInterface({
+const rl111 = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
@@ -5059,4 +5059,8 @@ function responseTwo(secondAnswer) {
     `I aint got time to shuck and jive! These niggas sweet as?`,
     responseThree
   );
+}
+function responseThree(thirdAnswer) {
+  console.log(`${thirdAnswer}`);
+  rl.question(`Ciroc and Sprite on a private?`, responseFour);
 }
