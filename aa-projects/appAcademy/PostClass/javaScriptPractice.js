@@ -5096,3 +5096,8 @@ function responseTen(tenthAnswer) {
   console.log(`${tenthAnswer}`);
   rl.question(`I puts it down, Im so?`, responseEleven);
 }
+
+function responseEleven(eleventhAnswer) {
+  console.log(`${eleventhAnswer}`);
+  rl.question(`If you got eyes look at me now?`, lastResponse);
+}
