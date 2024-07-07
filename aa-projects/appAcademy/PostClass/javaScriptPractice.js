@@ -5092,3 +5092,7 @@ function responseNine(ninthAnswer) {
   console.log(`${ninthAnswer}`);
   rl.question(`Been here for a while I was like?`, responseTen);
 }
+function responseTen(tenthAnswer) {
+  console.log(`${tenthAnswer}`);
+  rl.question(`I puts it down, Im so?`, responseEleven);
+}
