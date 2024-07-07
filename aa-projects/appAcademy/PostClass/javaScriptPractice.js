@@ -5075,3 +5075,8 @@ function responseFive(fifthAnswer) {
   console.log(`${fifthAnswer}`);
   rl.question(`And my diamonds?`, responseSix);
 }
+
+function responseSix(sixthAnswer) {
+  console.log(`${sixthAnswer}`);
+  rl.question(`And my mommas?`, responseSeven);
+}
