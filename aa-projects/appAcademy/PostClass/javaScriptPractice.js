@@ -5084,3 +5084,7 @@ function responseSeven(seventhAnswer) {
   console.log(`${seventhAnswer}`);
   rl.question(`And my daddy?`, responseEight);
 }
+function responseEight(eigthAnswer) {
+  console.log(`${eigthAnswer}`);
+  rl.question(`You faggots scared cause im too?`, responseNine);
+}
