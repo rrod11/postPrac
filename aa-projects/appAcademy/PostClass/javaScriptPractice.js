@@ -5080,3 +5080,7 @@ function responseSix(sixthAnswer) {
   console.log(`${sixthAnswer}`);
   rl.question(`And my mommas?`, responseSeven);
 }
+function responseSeven(seventhAnswer) {
+  console.log(`${seventhAnswer}`);
+  rl.question(`And my daddy?`, responseEight);
+}
