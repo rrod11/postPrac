@@ -5101,3 +5101,7 @@ function responseEleven(eleventhAnswer) {
   console.log(`${eleventhAnswer}`);
   rl.question(`If you got eyes look at me now?`, lastResponse);
 }
+function lastResponse(lastAnswer) {
+  console.log(`${lastAnswer.toUpperCase().repeat(5)}`);
+  rl.close();
+}
