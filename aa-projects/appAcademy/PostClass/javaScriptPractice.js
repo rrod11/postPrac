@@ -5064,3 +5064,10 @@ function responseThree(thirdAnswer) {
   console.log(`${thirdAnswer}`);
   rl.question(`Ciroc and Sprite on a private?`, responseFour);
 }
+function responseFour(fourthAnswer) {
+  console.log(`${fourthAnswer}`);
+  rl.question(
+    `Bitch, Ive been tight since guiding light, and my pockets?`,
+    responseFive
+  );
+}
