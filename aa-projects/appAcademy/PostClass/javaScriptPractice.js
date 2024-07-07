@@ -5088,3 +5088,7 @@ function responseEight(eigthAnswer) {
   console.log(`${eigthAnswer}`);
   rl.question(`You faggots scared cause im too?`, responseNine);
 }
+function responseNine(ninthAnswer) {
+  console.log(`${ninthAnswer}`);
+  rl.question(`Been here for a while I was like?`, responseTen);
+}
