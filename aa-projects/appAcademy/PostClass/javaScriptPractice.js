@@ -5123,3 +5123,19 @@ function mostFrequentVowel(words, counter = {}) {
     }
     return mostFrequent; // return the most frequent vowel or an empty string
   }
+  let word = words[0]; // set the variable word to be the word at the zeroth index
+  for (let letter of word) {
+    // iterate through each letter of the current word
+    if (VOWELS.includes(letter)) {
+      //checking if the current letter is a vowel
+      if (counter[letter]) {
+        //if it is a vowel check to see if it is present in the counter object
+        counter[letter]++; //assuming it is increment the value by 1
+      } else {
+        // if the current letter is a vowel but not current in the object
+        counter[letter] = 1; //create the value in object and set the value to equal 1
+      }
+    }
+  }
+  return mostFrequentVowel(words.slice(1), counter); //recursively call the string until no words remain
+}
