@@ -5139,3 +5139,28 @@ function mostFrequentVowel(words, counter = {}) {
   }
   return mostFrequentVowel(words.slice(1), counter); //recursively call the string until no words remain
 }
+
+// function mostFrequentVowel(words, counter = {}) {
+//   if (words.length === 0) {
+//     let max = 0;
+//     let mostFrequent = "";
+//     for (let vowel in counter) {
+//       if (counter[vowel] > max) {
+//         max = counter[vowel];
+//         mostFrequent = vowel;
+//       }
+//     }
+//     return mostFrequent;
+//   }
+//   let word = words[0];
+//   for (let letter of word) {
+//     if (VOWELS.includes(letter)) {
+//       if (counter[letter]) {
+//         counter[letter]++;
+//       } else {
+//         counter[letter] = 1;
+//       }
+//     }
+//   }
+//   return mostFrequentVowel(words.slice(1), counter);
+// }
