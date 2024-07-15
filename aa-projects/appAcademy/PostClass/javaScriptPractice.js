@@ -5105,3 +5105,5 @@ function lastResponse(lastAnswer) {
   console.log(`${lastAnswer.toUpperCase().repeat(5)}`);
   rl.close();
 }
+
+const VOWELS = ["a", "e", "i", "o", "u"];
