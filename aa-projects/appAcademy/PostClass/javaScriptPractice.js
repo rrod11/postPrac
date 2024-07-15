@@ -5166,3 +5166,6 @@ function mostFrequentVowel(words, counter = {}) {
 // }
 // console.log(mostFrequentVowel(["dog", "cow", "pig", "chicken", "horse"])); // 'o'
 // console.log(mostFrequentVowel(["dog", "cow", "pig", "chicken"])); // 'i' or 'o'
+/*
+Only the following will be considered as vowels: 'a', 'e', 'i', 'o', 'u'.
+*/
