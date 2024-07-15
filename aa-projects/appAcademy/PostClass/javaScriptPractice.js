@@ -5169,3 +5169,7 @@ function mostFrequentVowel(words, counter = {}) {
 /*
 Only the following will be considered as vowels: 'a', 'e', 'i', 'o', 'u'.
 */
+
+// words = ['apple', 'pear', 'melon', 'coconut', 'lime']
+// counter = {}
+// mostFrequentVowel(words, counter)
