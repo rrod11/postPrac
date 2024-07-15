@@ -5164,3 +5164,5 @@ function mostFrequentVowel(words, counter = {}) {
 //   }
 //   return mostFrequentVowel(words.slice(1), counter);
 // }
+// console.log(mostFrequentVowel(["dog", "cow", "pig", "chicken", "horse"])); // 'o'
+// console.log(mostFrequentVowel(["dog", "cow", "pig", "chicken"])); // 'i' or 'o'
