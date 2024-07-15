@@ -5107,3 +5107,19 @@ function lastResponse(lastAnswer) {
 }
 
 const VOWELS = ["a", "e", "i", "o", "u"];
+function mostFrequentVowel(words, counter = {}) {
+  // function that accepts a string and default counter param
+  if (words.length === 0) {
+    // if string is empty
+    let max = 0; // let the max number be  0
+    let mostFrequent = ""; // let the most frequent vowel be an empty string
+    for (let vowel in counter) {
+      // iterate through the counter to check if a value exists
+      if (counter[vowel] > max) {
+        // if the value at that iteration is greater than the current max
+        max = counter[vowel]; // max becomes the value at that vowel
+        mostFrequent = vowel; // most frequent vowel becomes the vowel at the current iteration
+      }
+    }
+    return mostFrequent; // return the most frequent vowel or an empty string
+  }
