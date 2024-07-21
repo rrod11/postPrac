@@ -5226,4 +5226,7 @@ function printOuterNumsFirst(nums) {
   if (nums.length % 2 === 0) {
     // if the length of the array is even
     num = nums.shift(); // remove the first element and store in num variable
+  } else {
+    // if the length of the array is odd
+    num = nums.pop(); // remove the last element and store it in the num variable
   }
