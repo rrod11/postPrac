@@ -5203,3 +5203,8 @@ Only the following will be considered as vowels: 'a', 'e', 'i', 'o', 'u'.
 // words = ['apple']
 // counter = { i: 1, e: 4, o: 3, u: 1, a: 2 }
 // mostFrequentVowel(words, counter)
+
+// Step 6: No words remaining, return 'e'
+// words = []
+// counter = { i: 1, e: 4, o: 3, u: 1, a: 3 }
+// mostFrequentVowel(words, counter)
