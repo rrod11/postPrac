@@ -5219,3 +5219,11 @@ mostFrequentVowel(['dog', 'cow', 'pig', 'chicken']); // 'i' or 'o'
 function printOuterNumsFirst(nums) {
   // accepts an array of numbers
   if (nums.length === 0) return; // if numbers array is empty just return value
+
+  // extract the number from the beginning if the length of the array is even
+  // else, extract from the end
+  let num; // declaring num variable
+  if (nums.length % 2 === 0) {
+    // if the length of the array is even
+    num = nums.shift(); // remove the first element and store in num variable
+  }
