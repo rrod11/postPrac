@@ -5214,3 +5214,8 @@ mostFrequentVowel(['dog', 'cow', 'pig', 'chicken', 'horse']); // 'o'
 mostFrequentVowel(['dog', 'cow', 'pig', 'chicken']); // 'i' or 'o'
 
 */
+
+
+function printOuterNumsFirst(nums) {
+  // accepts an array of numbers
+  if (nums.length === 0) return; // if numbers array is empty just return value
