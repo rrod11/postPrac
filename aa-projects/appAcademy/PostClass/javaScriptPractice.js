@@ -5215,7 +5215,6 @@ mostFrequentVowel(['dog', 'cow', 'pig', 'chicken']); // 'i' or 'o'
 
 */
 
-
 function printOuterNumsFirst(nums) {
   // accepts an array of numbers
   if (nums.length === 0) return; // if numbers array is empty just return value
@@ -5233,3 +5232,7 @@ function printOuterNumsFirst(nums) {
 
   // print the extracted number
   console.log(num); // print the number stored
+
+  // Make a recursive call with the modified nums array.
+  printOuterNumsFirst(nums); //recursively call the modified nums array until empty
+}
