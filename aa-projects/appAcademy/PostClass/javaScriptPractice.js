@@ -5230,3 +5230,6 @@ function printOuterNumsFirst(nums) {
     // if the length of the array is odd
     num = nums.pop(); // remove the last element and store it in the num variable
   }
+
+  // print the extracted number
+  console.log(num); // print the number stored
