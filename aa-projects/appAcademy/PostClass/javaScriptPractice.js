@@ -5272,3 +5272,8 @@ Examples:
 const smallEliminate = eliminateType([1, 'one', 2, 'two', 3, 'three']);
 smallEliminate('number'); // ['one', 'two', 'three']
 smallEliminate('string'); // [1, 2, 3]
+
+const eliminate = eliminateType([2, undefined, 'world', { color: 'red' }, true, 3, [4, 5], 'hello', false]);
+eliminate('number'); // [undefined, 'world', { color: 'red' }, true, [4, 5], 'hello', false]
+eliminate('object'); // [2, undefined, 'world', true, 3, 'hello', false]
+*/
