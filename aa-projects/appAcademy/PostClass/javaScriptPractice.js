@@ -5286,3 +5286,18 @@ function printAndPause(nums) {
 }
 
 // printAndPause([200, 800, 700, 8000, 2100, 8800]);
+
+/*
+200
+// pause 200ms
+800
+// pause 800ms
+700
+// pause 700ms
+8000
+// pause 8000ms
+2100
+// pause 2100ms
+8800
+// pause 8800ms
+*/
