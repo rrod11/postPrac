@@ -5236,3 +5236,4 @@ function printOuterNumsFirst(nums) {
   // Make a recursive call with the modified nums array.
   printOuterNumsFirst(nums); //recursively call the modified nums array until empty
 }
+/*
