@@ -5277,3 +5277,10 @@ const eliminate = eliminateType([2, undefined, 'world', { color: 'red' }, true, 
 eliminate('number'); // [undefined, 'world', { color: 'red' }, true, [4, 5], 'hello', false]
 eliminate('object'); // [2, undefined, 'world', true, 3, 'hello', false]
 */
+
+function printAndPause(nums) {
+  if (nums.length === 0) return;
+  let integer = nums[0];
+  console.log(integer);
+  return setTimeout(printAndPause, integer, nums.slice(1));
+}
