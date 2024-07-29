@@ -5256,3 +5256,11 @@ printOuterNumsFirst([21, 4, 6, 93, 78]);
 // 6
 
 */
+
+function eliminateType(arr) {
+  // take in an array
+  return function (type) {
+    // return a function that specifies a type
+    return arr.filter((ele) => typeof ele !== type); // filter through each ele of the arr excluding the type provided
+  };
+}
