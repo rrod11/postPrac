@@ -5284,3 +5284,5 @@ function printAndPause(nums) {
   console.log(integer);
   return setTimeout(printAndPause, integer, nums.slice(1));
 }
+
+// printAndPause([200, 800, 700, 8000, 2100, 8800]);
