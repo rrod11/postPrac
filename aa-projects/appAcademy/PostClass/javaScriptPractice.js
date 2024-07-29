@@ -5264,3 +5264,11 @@ function eliminateType(arr) {
     return arr.filter((ele) => typeof ele !== type); // filter through each ele of the arr excluding the type provided
   };
 }
+
+/*
+
+Examples:
+
+const smallEliminate = eliminateType([1, 'one', 2, 'two', 3, 'three']);
+smallEliminate('number'); // ['one', 'two', 'three']
+smallEliminate('string'); // [1, 2, 3]
