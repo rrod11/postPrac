@@ -5311,3 +5311,6 @@ function squared(input, arr = []) {
   arr.push(num);
   return arr, squared(input.slice(1), arr);
 }
+function squared1(input) {
+  return input.map((ele) => ele ** 2);
+}
