@@ -5305,3 +5305,9 @@ function printAndPause(nums) {
 /*
 Square the value of every element in the array. Presume that you will only get numbers in the input array.
 */
+function squared(input, arr = []) {
+  if (input.length === 0) return arr;
+  let num = input[0] ** 2;
+  arr.push(num);
+  return arr, squared(input.slice(1), arr);
+}
