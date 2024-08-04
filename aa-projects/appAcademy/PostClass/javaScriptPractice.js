@@ -5326,3 +5326,8 @@ If the given input is an array of numbers, return the sum of all the positives o
 */
 
 // const input = [1, -4, 12, 0, -3, 29, -150];
+
+function positiveSum(input) {
+  let sum = 0;
+  return input.filter((ele) => ele > 0).reduce((acc, ele) => acc + ele, 0);
+}
