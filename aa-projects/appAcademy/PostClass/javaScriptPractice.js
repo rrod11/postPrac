@@ -5320,3 +5320,7 @@ function squared2(input) {
 // const input = [1, 2, 3, 4, 5];
 // //[1, 4, 9, 16, 25];
 // console.log(squared(input));
+
+/*
+If the given input is an array of numbers, return the sum of all the positives ones. If the array is empty or there aren't any positive numbers, return 0.
+*/
