@@ -5331,3 +5331,5 @@ function positiveSum(input) {
   let sum = 0;
   return input.filter((ele) => ele > 0).reduce((acc, ele) => acc + ele, 0);
 }
+
+// console.log(positiveSum(input));
