@@ -5347,3 +5347,5 @@ function meanAndMedian(input, obj = {}) {
 
   return obj;
 }
+
+// console.log(meanAndMedian(input));
