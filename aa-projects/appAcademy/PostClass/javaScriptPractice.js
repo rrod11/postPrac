@@ -5349,3 +5349,10 @@ function meanAndMedian(input, obj = {}) {
 }
 
 // console.log(meanAndMedian(input));
+
+/*
+The given input is a string of multiple words with a single space between each of them. Abbreviate the name and return the name initials.
+
+  **hag
+
+*/
