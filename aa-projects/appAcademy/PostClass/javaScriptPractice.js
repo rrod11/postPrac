@@ -5366,3 +5366,5 @@ function initial(name) {
     .map((ele) => ele[0])
     .join("");
 }
+
+// console.log(initial(input));
