@@ -5333,3 +5333,7 @@ function positiveSum(input) {
 }
 
 // console.log(positiveSum(input));
+
+/*
+Calculate the mean values of the number elements from the input array.
+*/
