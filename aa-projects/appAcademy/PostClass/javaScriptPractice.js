@@ -5341,3 +5341,9 @@ Calculate the mean values of the number elements from the input array.
 // const input = [12, 46, 32, 64];
 
 // { mean: 38.5}
+
+function meanAndMedian(input, obj = {}) {
+  obj["mean"] = input.reduce((acc, ele) => ele + acc) / input.length;
+
+  return obj;
+}
