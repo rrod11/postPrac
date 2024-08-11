@@ -5337,3 +5337,5 @@ function positiveSum(input) {
 /*
 Calculate the mean values of the number elements from the input array.
 */
+
+// const input = [12, 46, 32, 64];
