@@ -5356,3 +5356,4 @@ The given input is a string of multiple words with a single space between each o
   **hag
 
 */
+// const input = "George Raymond Richard Martin";
