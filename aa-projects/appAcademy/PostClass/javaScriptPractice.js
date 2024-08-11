@@ -5359,3 +5359,10 @@ The given input is a string of multiple words with a single space between each o
 // const input = "George Raymond Richard Martin";
 
 // expected output "GRRM";
+
+function initial(name) {
+  return name
+    .split(" ")
+    .map((ele) => ele[0])
+    .join("");
+}
