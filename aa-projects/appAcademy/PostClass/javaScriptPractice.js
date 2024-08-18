@@ -5406,3 +5406,5 @@ function ageDifference(input) {
     Math.max(...ages) - Math.min(...ages),
   ];
 }
+
+// console.log(ageDifference(input));
