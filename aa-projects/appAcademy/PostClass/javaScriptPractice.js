@@ -5397,3 +5397,12 @@ Find the difference in age between the oldest and youngest family members, and r
 // ];
 
 //[13, 67, 54];
+
+function ageDifference(input) {
+  let ages = input.map((person) => person.age);
+  return [
+    Math.min(...ages),
+    Math.max(...ages),
+    Math.max(...ages) - Math.min(...ages),
+  ];
+}
