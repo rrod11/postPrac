@@ -5368,3 +5368,7 @@ function initial(name) {
 }
 
 // console.log(initial(input));
+
+/*
+Find the difference in age between the oldest and youngest family members, and return their respective ages and the age difference.
+*/
