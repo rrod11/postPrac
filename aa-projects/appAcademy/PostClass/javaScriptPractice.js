@@ -5395,3 +5395,5 @@ Find the difference in age between the oldest and youngest family members, and r
 //     age: 65,
 //   },
 // ];
+
+//[13, 67, 54];
