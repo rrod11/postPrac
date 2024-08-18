@@ -5420,3 +5420,10 @@ Devs like to abbreviate everything: k8s means Kubernetes, a11y means accessibili
 function creation(word) {
   return word[0] + (word.length - 2) + word[word.length - 1];
 }
+
+function numeronyms(str) {
+  return str
+    .split(" ")
+    .map((word) => (word.length >= 4 ? creation(word) : word))
+    .join(" ");
+}
