@@ -5438,3 +5438,10 @@ If the given input is a number, you should return the factorial of that number. 
 //     return i;
 //   }
 // }
+
+function factorial(num) {
+  return new Array(num)
+    .fill(null)
+    .map((number, index) => index + 1)
+    .reduce((acc, number) => acc * number, 1);
+}
