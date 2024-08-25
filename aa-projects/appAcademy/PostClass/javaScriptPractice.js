@@ -5447,3 +5447,5 @@ function factorial(num) {
 }
 // const input = 6;
 //720
+
+// console.log(factorial(input));
