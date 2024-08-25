@@ -5445,3 +5445,4 @@ function factorial(num) {
     .map((number, index) => index + 1)
     .reduce((acc, number) => acc * number, 1);
 }
+// const input = 6;
