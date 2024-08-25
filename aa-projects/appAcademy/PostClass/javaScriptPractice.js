@@ -5446,3 +5446,4 @@ function factorial(num) {
     .reduce((acc, number) => acc * number, 1);
 }
 // const input = 6;
+//720
