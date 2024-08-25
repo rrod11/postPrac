@@ -5427,3 +5427,5 @@ function numeronyms(str) {
     .map((word) => (word.length >= 4 ? creation(word) : word))
     .join(" ");
 }
+
+// console.log(numeronyms(input));
