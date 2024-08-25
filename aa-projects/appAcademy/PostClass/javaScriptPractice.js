@@ -5449,3 +5449,7 @@ function factorial(num) {
 //720
 
 // console.log(factorial(input));
+
+/*
+Count the occurrences of distinct elements in the given 2D array. The given input is an array, the elements of which are arrays of strings. The result is an object whose property names are the values from the arrays and their value is the number of their occurrences.
+*/
