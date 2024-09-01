@@ -5467,3 +5467,8 @@ Count the occurrences of distinct elements in the given 2D array. The given inpu
 //    f: 2,
 //    g: 1,
 //  }
+
+function count2DArray(array, obj = {}) {
+  array.flat().map((ele) => (obj[ele] ? obj[ele]++ : (obj[ele] = 1)));
+  return obj;
+}
