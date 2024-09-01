@@ -5472,3 +5472,14 @@ function count2DArray(array, obj = {}) {
   array.flat().map((ele) => (obj[ele] ? obj[ele]++ : (obj[ele] = 1)));
   return obj;
 }
+
+function count2DArray(array) {
+  return array.flat().reduce((acc, ele) => {
+    if (acc[ele]) {
+      acc[ele]++;
+    } else {
+      acc[ele] = 1;
+    }
+    return acc;
+  }, {});
+}
