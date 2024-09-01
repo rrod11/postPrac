@@ -5483,3 +5483,5 @@ function count2DArray(array) {
     return acc;
   }, {});
 }
+
+// console.log(count2DArray(input));
