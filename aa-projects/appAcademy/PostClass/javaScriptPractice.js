@@ -5508,3 +5508,5 @@ function highAvg(arr) {
     })
     .filter((student) => student.average > 90);
 }
+
+// console.log(highAvg(students));
