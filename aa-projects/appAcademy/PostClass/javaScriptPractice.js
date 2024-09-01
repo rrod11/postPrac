@@ -5510,3 +5510,7 @@ function highAvg(arr) {
 }
 
 // console.log(highAvg(students));
+
+/*
+refactor a previous function you made to do a factorial sum
+*/
