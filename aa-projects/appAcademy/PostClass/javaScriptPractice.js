@@ -5485,3 +5485,6 @@ function count2DArray(array) {
 }
 
 // console.log(count2DArray(input));
+/*
+You are given an array of objects representing a group of students, each with a name and an array of test scores. Your task is to use map, filter, and reduce to calculate the average test score for each student, and then return an array of objects containing only the students who have an average score above 90.
+*/
