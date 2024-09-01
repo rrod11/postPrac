@@ -5514,3 +5514,10 @@ function highAvg(arr) {
 /*
 refactor a previous function you made to do a factorial sum
 */
+
+function factorialSum(num) {
+  return new Array(num)
+    .fill(null)
+    .map((number, index) => index + 1)
+    .reduce((acc, number) => acc + number, 0);
+}
