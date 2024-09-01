@@ -5495,3 +5495,7 @@ You are given an array of objects representing a group of students, each with a 
 //   { name: "Charlie", scores: [90, 95, 85] },
 //   { name: "David", scores: [100, 100, 100] },
 // ];
+
+//[
+//  { name: 'Jack', average: 100 }
+//]
