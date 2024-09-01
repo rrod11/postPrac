@@ -5499,3 +5499,12 @@ You are given an array of objects representing a group of students, each with a 
 //[
 //  { name: 'Jack', average: 100 }
 //]
+
+function highAvg(arr) {
+  return arr
+    .map((student) => {
+      let sum = student.scores.reduce((acc, num) => acc + num, 0);
+      return { name: student.name, average: sum / student.scores.length };
+    })
+    .filter((student) => student.average > 90);
+}
