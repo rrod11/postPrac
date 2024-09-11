@@ -5561,3 +5561,7 @@ function productCategory(products) {
 //       return { category: category, average: sum / productsByCategory[category].length};
 //     });
 //   }
+
+// ,function sortAndReport() {
+//   productAverage.filter((category) => category.average >= 50)
+// }
