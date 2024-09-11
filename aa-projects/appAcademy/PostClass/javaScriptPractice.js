@@ -5554,3 +5554,10 @@ function productCategory(products) {
     return acc;
   }, {});
 }
+
+// let productAverage = Object.keys(productCategory).map((category) => {
+//     let sum = productCategory[category].reduce((acc, product) => {
+//       acc + product, 0;
+//       return { category: category, average: sum / productsByCategory[category].length};
+//     });
+//   }
