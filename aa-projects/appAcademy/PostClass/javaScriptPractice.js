@@ -5574,3 +5574,6 @@ function productCategory(products) {
 //   if (!acc[category]) {
 //     acc[category] = [];
 //   }
+//   acc[category].push(product);
+//   return acc;
+// }, {});
