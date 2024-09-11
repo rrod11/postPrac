@@ -5543,3 +5543,14 @@ const products = [
 //  { category: 'Clothes', average: 55 },
 //  { category: 'Electronics', average: 55 }
 //]
+
+function productCategory(products) {
+  products.reduce((acc, product) => {
+    let category = product.category;
+    if (!acc[category]) {
+      acc[category] = [];
+    }
+    acc[category].push(product);
+    return acc;
+  }, {});
+}
