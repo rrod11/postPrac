@@ -5538,3 +5538,8 @@ const products = [
   { name: "Product 7", price: 80, category: "Clothes" },
   { name: "Product 8", price: 90, category: "Electronics" },
 ];
+
+// [
+//  { category: 'Clothes', average: 55 },
+//  { category: 'Electronics', average: 55 }
+//]
