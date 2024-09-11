@@ -5523,3 +5523,7 @@ function factorialSum(num) {
 }
 
 // console.log(factorialSum(100));
+
+/*
+You are given an array of objects representing a collection of products, each with a name, price, and category. Your task is to use map, filter, and reduce to calculate the average price of products in each category, and then return an array of objects containing only the categories that have an average price above 50.
+*/
