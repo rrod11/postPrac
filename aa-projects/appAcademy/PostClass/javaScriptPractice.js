@@ -5568,3 +5568,9 @@ function productCategory(products) {
 
 // /* Use map to create a dictionary with category as the key
 // and an array of products as the value */
+
+// const productsByCategory = products.reduce((acc, product) => {
+//   const category = product.category;
+//   if (!acc[category]) {
+//     acc[category] = [];
+//   }
