@@ -5577,3 +5577,5 @@ function productCategory(products) {
 //   acc[category].push(product);
 //   return acc;
 // }, {});
+
+// // Use map to calculate the average price for each category
