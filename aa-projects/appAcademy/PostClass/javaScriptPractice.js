@@ -5521,3 +5521,5 @@ function factorialSum(num) {
     .map((number, index) => index + 1)
     .reduce((acc, number) => acc + number, 0);
 }
+
+// console.log(factorialSum(100));
