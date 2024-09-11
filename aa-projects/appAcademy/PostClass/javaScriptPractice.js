@@ -5562,6 +5562,6 @@ function productCategory(products) {
 //     });
 //   }
 
-// ,function sortAndReport() {
+// function sortAndReport() {
 //   productAverage.filter((category) => category.average >= 50)
 // }
