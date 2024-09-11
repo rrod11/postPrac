@@ -5565,3 +5565,6 @@ function productCategory(products) {
 // function sortAndReport() {
 //   productAverage.filter((category) => category.average >= 50)
 // }
+
+// /* Use map to create a dictionary with category as the key
+// and an array of products as the value */
