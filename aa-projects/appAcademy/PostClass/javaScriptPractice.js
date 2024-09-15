@@ -5584,3 +5584,5 @@ function productCategory(products) {
 //   const sum = productsByCategory[category].reduce((acc, product) => acc + product.price, 0);
 //   return { category: category, average: sum / productsByCategory[category].length };
 // });
+
+// // Use filter to only select categories with an average above a certain threshold
