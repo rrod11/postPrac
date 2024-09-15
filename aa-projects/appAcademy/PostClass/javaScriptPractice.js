@@ -5640,3 +5640,5 @@ Finally, it filters the categories that have an average price greater than 50 us
 
 // const slicer2 = dynamicSlice(2, 7);
 // console.log(slicer2(["kittens", "puppies", "cats", "dogs"])); // prints [ 'cats', 'dogs' ]
+
+// let goodbye;
