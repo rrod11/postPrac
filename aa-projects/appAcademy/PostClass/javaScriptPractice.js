@@ -5579,3 +5579,8 @@ function productCategory(products) {
 // }, {});
 
 // // Use map to calculate the average price for each category
+
+// const avgPriceByCategory = Object.keys(productsByCategory).map(category => {
+//   const sum = productsByCategory[category].reduce((acc, product) => acc + product.price, 0);
+//   return { category: category, average: sum / productsByCategory[category].length };
+// });
