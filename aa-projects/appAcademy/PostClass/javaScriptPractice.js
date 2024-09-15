@@ -5586,3 +5586,5 @@ function productCategory(products) {
 // });
 
 // // Use filter to only select categories with an average above a certain threshold
+
+// const highPricedCategories = avgPriceByCategory.filter(category => category.average > 50);
