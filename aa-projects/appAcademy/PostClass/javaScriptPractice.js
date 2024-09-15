@@ -5604,3 +5604,5 @@ Finally, it filters the categories that have an average price greater than 50 us
 
 
 */
+
+// console.log(sortAndReport(products));
