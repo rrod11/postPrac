@@ -5637,3 +5637,5 @@ Finally, it filters the categories that have an average price greater than 50 us
 //     return inner(arr, slice);
 //   };
 // }
+
+// const slicer2 = dynamicSlice(2, 7);
