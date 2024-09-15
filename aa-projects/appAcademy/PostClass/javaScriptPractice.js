@@ -5588,3 +5588,19 @@ function productCategory(products) {
 // // Use filter to only select categories with an average above a certain threshold
 
 // const highPricedCategories = avgPriceByCategory.filter(category => category.average > 50);
+
+/*
+This code is using JavaScript's reduce and map methods to process an array of products and group them by category, calculate the average price of each category, and then filter the categories that have an average price greater than 50.
+
+It starts by using the reduce method on the array of products and an empty object as an initial accumulator. The callback function passed to reduce takes in two arguments: an accumulator object and the current product.
+
+It assigns the product's category to a variable category, and checks if the accumulator object already contains a key for this category. If it doesn't, it creates a new key on the accumulator object with an empty array as its value. It then pushes the current product into the array of the corresponding category and returns the accumulator object.
+
+In the end, productsByCategory will be an object where each key is a category name, and the value is an array of products that belong to that category.
+
+Next, it uses Object.keys(productsByCategory) to extract the keys (category names) of the productsByCategory object and then map method to iterate over these keys and calculate the average price of products in each category. It calculates the sum of prices of all products in each category using reduce method and divides this sum with the number of products in that category.
+
+Finally, it filters the categories that have an average price greater than 50 using filter method.
+
+
+*/
