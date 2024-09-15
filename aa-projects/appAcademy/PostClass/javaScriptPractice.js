@@ -5625,3 +5625,15 @@ Finally, it filters the categories that have an average price greater than 50 us
 //     }
 
 // }
+
+// function dynamicSlice(start, end) {
+//   if (start < 0) start = 0;
+//   return function inner(arr, slice = []) {
+//     if (end >= arr.length) end = arr.length;
+//     // Base Case:
+//     if (start == end) return slice;
+//     slice.push(arr[start]);
+//     start++;
+//     return inner(arr, slice);
+//   };
+// }
