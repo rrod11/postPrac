@@ -5606,3 +5606,22 @@ Finally, it filters the categories that have an average price greater than 50 us
 */
 
 // console.log(sortAndReport(products));
+
+// function recursivePreserveType(array) {
+//     return function (...str) {
+//         function inner(newArr = array.slice()) {
+//             if (newArr.length <= 0) return [];
+
+//             let el = newArr.shift();
+
+//             if (str.includes(typeof el)) {
+//                 return [el, ...inner(newArr)];
+//             }
+
+//             return [...[], ...inner(newArr)]
+//         }
+
+//         return inner()
+//     }
+
+// }
