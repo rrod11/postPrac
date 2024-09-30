@@ -5653,3 +5653,5 @@ if ("banana") {
 } else {
   console.log("g");
 }
+
+console.log(sayHello("Jeff"));
