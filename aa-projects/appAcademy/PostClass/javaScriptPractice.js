@@ -5709,3 +5709,13 @@ function sort(nums, sorted = []) {
   nums.splice(i, 1);
   return sort(nums, sorted);
 }
+
+function smallestNum(array) {
+  let smalls = array[0];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] < smalls) {
+      smalls = array[i];
+    }
+  }
+  return array.indexOf(smalls);
+}
