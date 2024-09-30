@@ -5687,3 +5687,5 @@ function r2d2Speaks(code) {
     setTimeout(r2d2Speaks, 800, code);
   }
 }
+
+let code = [0, 1, 1, 0];
