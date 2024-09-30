@@ -5774,3 +5774,24 @@ function evenNumberRange(num1, num2) {
 		const slicer3 = dynamicSlice(-10, 2);
     console.log(slicer3([99, 40, 131, 8])); // prints [ 99, 40 ]
 */
+
+function dynamicSlice(start, end) {
+  return function (array) {
+    // return function
+    let arr = []; //creating a copy array
+    if (start < 0) {
+      //if start is less than 0
+      if (end > array.length) {
+        //if end is larger than the array length
+        return arr.push(...array); //return the array from start to end
+      } else if (end <= array.length) {
+        //if end isnt larger than the array length and the start is less than 0
+        let newArr = array.splice(0, end); // create a copy of the array from index 0 and end-1 number of elements after
+        return newArr; //return that copy
+      }
+    } else {
+      //if start is 0 or larger
+      return array.splice(start, end - 1); // return a new array from the start index to the index minus 1
+    }
+  };
+}
