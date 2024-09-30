@@ -5643,3 +5643,13 @@ Finally, it filters the categories that have an average price greater than 50 us
 
 // let goodbye;
 // console.log(goodbye);
+
+if ("banana") {
+  console.log("h");
+} else if ([]) {
+  console.log("f");
+} else if ("") {
+  console.log("k");
+} else {
+  console.log("g");
+}
