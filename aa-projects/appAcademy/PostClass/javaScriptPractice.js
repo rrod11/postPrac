@@ -5751,3 +5751,4 @@ function evenNumberRange(num1, num2) {
 }
 
 // console.log(evenNumberRange(-3, 2)); // prints [-2, 0, 2]
+// console.log(evenNumberRange(22, 25)); // prints [22, 24]
