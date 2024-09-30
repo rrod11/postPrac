@@ -5701,3 +5701,11 @@ r2d2Speaks(code);
     console.log(sort([5, 4, 3, 2, 1])) // prints [1, 2, 3, 4, 5]
     console.log(sort([14, 5, 10, 6, 3, 4, 21, 16, 9])); // prints [ 3, 4, 5, 6, 9, 10, 14, 16, 21 ]
 */
+
+function sort(nums, sorted = []) {
+  if (nums.length === 0) return sorted;
+  let i = smallestNum(nums);
+  sorted.push(nums[i]);
+  nums.splice(i, 1);
+  return sort(nums, sorted);
+}
