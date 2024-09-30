@@ -5729,3 +5729,14 @@ function smallestNum(array) {
     console.log(evenNumberRange(22, 25)); // prints [22, 24]
     console.log(evenNumberRange(2, 0)); // prints []
 */
+
+// function evenNumberRange(num1, num2) {
+//   if (num1 >= num2) return []; // if number 1 is bigger than number 2 eturn empty arr
+//   let arr = []; // create empty array
+//   for (let i = num1; i <= num2; i++) { //iterate between numbers
+//     if (i % 2 == 0) { //if number is even
+//       arr.push(i); //push number
+//     }
+//   }
+//   return arr;
+// }
