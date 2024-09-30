@@ -5675,3 +5675,15 @@ function sayHello(name) {
         print 'beep'
         pause for 400ms
 */
+
+function r2d2Speaks(code) {
+  if (!code.length) return;
+  let first = code.shift(); // takes the first element and removes it from the array
+  if (first == 0) {
+    console.log("beep");
+    setTimeout(r2d2Speaks, 400, code);
+  } else if (first == 1) {
+    console.log("boop");
+    setTimeout(r2d2Speaks, 800, code);
+  }
+}
