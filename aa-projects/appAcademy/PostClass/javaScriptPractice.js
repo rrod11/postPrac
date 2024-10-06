@@ -5829,3 +5829,9 @@ console.log(preserveFunc2('object')); // prints [ { color: 'red' }, [4, 5] ];
 console.log(preserveFunc2('boolean', 'string', 'undefined')); // prints [ undefined, 'world', true, 'hello', false ]
 
 */
+
+function preserveTypes(array) {
+  return function (...types) {
+    return array.filter((ele) => types.includes(typeof ele));
+  };
+}
