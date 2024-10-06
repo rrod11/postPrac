@@ -5877,3 +5877,16 @@ However, for bonus points try to solve it both with recursion and iteration.
 //     });
 //   };
 // }
+
+function recursivePreserveType(array) {
+  return function checkType(str, sorted = [], copy = array.slice()) {
+    if (!copy.length) return sorted;
+    let firstEl = copy.shift();
+
+    if (str === typeof firstEl) {
+      sorted.push(firstEl);
+    }
+
+    return checkType(str, sorted, copy);
+  };
+}
