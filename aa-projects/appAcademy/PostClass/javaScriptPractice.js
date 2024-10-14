@@ -5920,3 +5920,5 @@ function r2d2Speaks(code) {
 }
 
 let code = [0, 1, 1, 0];
+
+r2d2Speaks(code);
