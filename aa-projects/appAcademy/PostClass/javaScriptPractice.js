@@ -5972,3 +5972,12 @@ function smallestNum(array) {
 //   }
 //   return arr;
 // }
+
+function evenNumberRange(num1, num2) {
+  if (num1 > num2) return []; // if number 1 is bigger than number 2 eturn empty arr
+  if (num1 % 2 == 0) {
+    return [num1, ...evenNumberRange(num1 + 2, num2)];
+  }
+  //   num1++;
+  return [num1 + 1, ...evenNumberRange(num1 + 2, num2)];
+}
