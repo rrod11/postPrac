@@ -5981,3 +5981,5 @@ function evenNumberRange(num1, num2) {
   //   num1++;
   return [num1 + 1, ...evenNumberRange(num1 + 2, num2)];
 }
+
+// console.log(evenNumberRange(-3, 2)); // prints [-2, 0, 2]
