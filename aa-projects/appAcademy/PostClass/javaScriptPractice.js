@@ -6033,3 +6033,4 @@ function dynamicSlice(start, end) {
 
 const slicer2 = dynamicSlice(2, 7);
 console.log(slicer2(["kittens", "puppies", "cats", "dogs"])); // prints [ 'cats', 'dogs' ]
+const slicer3 = dynamicSlice(-10, 2);
