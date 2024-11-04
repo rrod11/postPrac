@@ -6077,3 +6077,7 @@ The return function should return a copy of the input array with only elements o
 specified types.
 
 Examples:
+
+const preserveFunc = preserveTypes([1, 'one', 2, 'two', 3, 'three']);
+console.log(preserveFunc('number')); // prints [1, 2, 3]
+console.log(preserveFunc('string')); // prints ['one', 'two', 'three']
