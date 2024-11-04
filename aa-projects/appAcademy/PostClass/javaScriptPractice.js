@@ -6056,3 +6056,4 @@ function dynamicSlice(start, end) {
     }
   };
 }
+const slicer = dynamicSlice(1, 3);
