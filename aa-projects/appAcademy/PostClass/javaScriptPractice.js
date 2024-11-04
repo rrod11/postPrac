@@ -6061,3 +6061,19 @@ function dynamicSlice(start, end) {
 // const slicer2 = dynamicSlice(2, 7);
 // console.log(slicer2(["kittens", "puppies", "cats", "dogs"])); // prints [ 'cats', 'dogs' ]
 // const slicer3 = dynamicSlice(-10, 2);
+
+/***********************************************************************
+Write a function called `preserveTypes` which takes in an array of elements
+that could be of any type and returns a function. The return function should
+accept any number of strings that could be any of the following types:
+
+- 'object'
+- 'number'
+- 'string'
+- 'boolean'
+- 'undefined'
+
+The return function should return a copy of the input array with only elements of the
+specified types.
+
+Examples:
