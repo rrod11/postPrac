@@ -6086,3 +6086,5 @@ const preserveFunc2 = preserveTypes([2, undefined, 'world', { color: 'red' }, tr
 console.log(preserveFunc2('number')); // prints [2, 3]
 console.log(preserveFunc2('object')); // prints [ { color: 'red' }, [4, 5] ];
 console.log(preserveFunc2('boolean', 'string', 'undefined')); // prints [ undefined, 'world', true, 'hello', false ]
+
+*/
