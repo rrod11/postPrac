@@ -6093,3 +6093,9 @@ function preserveTypes(array) {
     return array.filter((ele) => types.includes(typeof ele));
   };
 }
+
+// function preserveTypes(arr) {
+//   return function (...types) {
+//     return arr.filter((item) => types.includes(typeof item));
+//   };
+// }
