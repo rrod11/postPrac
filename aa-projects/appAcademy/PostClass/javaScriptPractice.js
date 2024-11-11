@@ -6150,3 +6150,6 @@ function recursivePreserveType(array) {
 }
 
 // # Single Responsibility Principle (SRP) & DRY (Don't Repeat Yourself)
+
+// SRP refers to the idea that a function or class or method should be responsible
+// for just as much functionality as is necessary...no more, no less.
