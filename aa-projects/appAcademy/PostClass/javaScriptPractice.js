@@ -6099,3 +6099,14 @@ function preserveTypes(array) {
 //     return arr.filter((item) => types.includes(typeof item));
 //   };
 // }
+
+/***********************************************************************
+Write a recursive function `recursivePreserveType` which takes in an array of elements
+that could be of any type and returns a function. The return function should
+accept one string that could be any of the following types:
+
+- 'object'
+- 'number'
+- 'string'
+- 'boolean'
+- 'undefined'
