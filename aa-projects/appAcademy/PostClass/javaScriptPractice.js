@@ -6127,3 +6127,11 @@ console.log(preserveFunc2('boolean')); // prints [ true, false ]
 Note: the mocha tests do not test that your solution is implemented recursively.
 However, for bonus points try to solve it both with recursion and iteration.
 */
+
+// function recursivePreserveType(array) {
+//   return function (type) {
+//     array.filter((ele) => {
+//       typeof ele === type;
+//     });
+//   };
+// }
