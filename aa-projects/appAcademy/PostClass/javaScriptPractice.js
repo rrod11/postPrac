@@ -6190,3 +6190,10 @@ function subtract(num1, num2) {
 function multiply(num1, num2) {
   // ...
 }
+
+module.exports = {
+  // only add, subtract, and operations gets exported from this file
+  add,
+  subtract,
+  operations,
+};
