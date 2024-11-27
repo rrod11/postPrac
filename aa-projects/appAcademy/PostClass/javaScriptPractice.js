@@ -6210,3 +6210,7 @@ Option B: Set properties on the module.exports object
 */
 
 const operationing = ["+", "-", "*"];
+
+function adding(num1, num2) {
+  // ...
+}
