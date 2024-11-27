@@ -6208,3 +6208,5 @@ module.exports = {
 /*
 Option B: Set properties on the module.exports object
 */
+
+const operationing = ["+", "-", "*"];
