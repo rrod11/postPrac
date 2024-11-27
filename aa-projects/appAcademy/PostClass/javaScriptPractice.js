@@ -6197,3 +6197,10 @@ module.exports = {
   subtract,
   operations,
 };
+
+// The above is shorthand for below
+// module.exports = {
+//   add: add,
+//   subtract: subtract,
+//   operations: operations
+// };
