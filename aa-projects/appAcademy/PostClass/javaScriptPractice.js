@@ -6169,3 +6169,5 @@ function recursivePreserveType(array) {
 // maintainable code.
 
 // The opposite of DRY coding is, of course, WET. We Enjoy Typing.
+
+// calculator.js
