@@ -6176,3 +6176,5 @@ function recursivePreserveType(array) {
 Option A: Assigning an object to the module.exports property
 
 */
+
+const operations = ["+", "-", "*"];
