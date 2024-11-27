@@ -6171,3 +6171,8 @@ function recursivePreserveType(array) {
 // The opposite of DRY coding is, of course, WET. We Enjoy Typing.
 
 // calculator.js
+
+/*
+Option A: Assigning an object to the module.exports property
+
+*/
