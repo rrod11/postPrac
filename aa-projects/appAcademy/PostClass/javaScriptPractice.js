@@ -6178,3 +6178,7 @@ Option A: Assigning an object to the module.exports property
 */
 
 const operations = ["+", "-", "*"];
+
+function add(num1, num2) {
+  // ...
+}
