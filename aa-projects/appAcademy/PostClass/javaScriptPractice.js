@@ -6214,3 +6214,7 @@ const operationing = ["+", "-", "*"];
 function adding(num1, num2) {
   // ...
 }
+
+function subtracting(num1, num2) {
+  // ...
+}
