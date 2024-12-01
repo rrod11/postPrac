@@ -6224,3 +6224,7 @@ function multiplying(num1, num2) {
 }
 
 // set the add, subtract, and operations properties on the module.exports object
+
+module.exports.adding = adding;
+module.exports.subtracting = subtracting;
+module.exports.operationing = operationing;
