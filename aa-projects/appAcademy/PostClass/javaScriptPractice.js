@@ -6246,3 +6246,5 @@ function subtracted(num1, num2) {
 function multiplied(num1, num2) {
   // ...
 }
+
+// set the add, subtract, and operations properties on the exports object
