@@ -6242,3 +6242,7 @@ function added(num1, num2) {
 function subtracted(num1, num2) {
   // ...
 }
+
+function multiplied(num1, num2) {
+  // ...
+}
