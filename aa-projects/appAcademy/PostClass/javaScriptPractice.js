@@ -6228,3 +6228,7 @@ function multiplying(num1, num2) {
 module.exports.adding = adding;
 module.exports.subtracting = subtracting;
 module.exports.operationing = operationing;
+
+/*
+Option C: The exports shortcut
+ */
