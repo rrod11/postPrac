@@ -6234,3 +6234,7 @@ Option C: The exports shortcut
  */
 
 const operationed = ["+", "-", "*"];
+
+function added(num1, num2) {
+  // ...
+}
