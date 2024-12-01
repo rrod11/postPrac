@@ -6232,3 +6232,5 @@ module.exports.operationing = operationing;
 /*
 Option C: The exports shortcut
  */
+
+const operationed = ["+", "-", "*"];
