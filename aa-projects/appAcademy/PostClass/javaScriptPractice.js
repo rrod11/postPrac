@@ -6271,3 +6271,8 @@ function multiplyer(num1, num2) {
 
 // set module.exports to the operations function instead of an object
 module.exports = operationer;
+
+// class Person {
+//   constructor(firstName) {
+//     this.firstName = "Caleb";
+//   }
