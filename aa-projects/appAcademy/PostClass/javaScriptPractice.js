@@ -6248,3 +6248,6 @@ function multiplied(num1, num2) {
 }
 
 // set the add, subtract, and operations properties on the exports object
+exports.added = added;
+exports.subtracted = subtracted;
+exports.operationed = operationed;
