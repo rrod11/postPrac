@@ -6276,3 +6276,8 @@ module.exports = operationer;
 //   constructor(firstName) {
 //     this.firstName = "Caleb";
 //   }
+
+//   greet() {
+//     console.log(`${this.firstName} says hello!`);
+//   }
+// }
