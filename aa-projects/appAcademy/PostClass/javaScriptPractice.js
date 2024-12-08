@@ -6256,3 +6256,7 @@ Exporting a single item from a module
 */
 
 const operationer = ["+", "-", "*"];
+
+function adder(num1, num2) {
+  // ...
+}
