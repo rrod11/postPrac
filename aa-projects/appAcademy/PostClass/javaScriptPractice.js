@@ -6254,3 +6254,5 @@ exports.operationed = operationed;
 /*
 Exporting a single item from a module
 */
+
+const operationer = ["+", "-", "*"];
