@@ -6251,3 +6251,6 @@ function multiplied(num1, num2) {
 exports.added = added;
 exports.subtracted = subtracted;
 exports.operationed = operationed;
+/*
+Exporting a single item from a module
+*/
