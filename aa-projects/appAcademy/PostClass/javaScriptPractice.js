@@ -6260,3 +6260,7 @@ const operationer = ["+", "-", "*"];
 function adder(num1, num2) {
   // ...
 }
+
+function subtracter(num1, num2) {
+  // ...
+}
