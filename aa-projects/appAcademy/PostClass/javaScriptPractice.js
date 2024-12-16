@@ -6339,3 +6339,10 @@ function shouldRecycle(item) {
   }
   return "Cannot be recycled";
 }
+
+const waterBottle = {
+  plastic: true,
+  color: "clear",
+  aluminum: false,
+  paper: false,
+};
