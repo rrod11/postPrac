@@ -6310,3 +6310,4 @@ const cats = [
   { name: "Indie", cuteness: 5 },
 ];
 debugger;
+console.log(cutestCat(cats)); // { name: 'Fluffy', cuteness: 9 }
