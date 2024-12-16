@@ -6311,3 +6311,18 @@ const cats = [
 ];
 debugger;
 console.log(cutestCat(cats)); // { name: 'Fluffy', cuteness: 9 }
+
+/*
+
+Fix the function `shouldRecycle` that determines if the item passed in can
+or cannot be recycled.
+
+If an item is plastic then it can be recycled and should return `Recycle Me!`
+UNLESS its color is black. Black plastics should return `Currently, cannot be
+recycled.`
+
+If an item is made of aluminum or paper then it can be recycled and should
+return `Recycle Me!`
+
+
+*/
