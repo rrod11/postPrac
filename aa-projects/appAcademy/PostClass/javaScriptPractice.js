@@ -6348,3 +6348,5 @@ const waterBottle = {
 };
 
 debugger;
+
+console.log(shouldRecycle(waterBottle)); // 'Recycle Me!'
