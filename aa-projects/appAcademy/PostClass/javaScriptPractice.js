@@ -6302,3 +6302,10 @@ function cutestCat(cats) {
 
   return cutest;
 }
+
+const cats = [
+  { name: "Fluffy", cuteness: 9 },
+  { name: "Princess", cuteness: 6 },
+  { name: "Tiger", cuteness: 7 },
+  { name: "Indie", cuteness: 5 },
+];
