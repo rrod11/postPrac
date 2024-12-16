@@ -6287,3 +6287,18 @@ module.exports = operationer;
 Fix the `cutestCat` function. Should return the cat with the highest `cuteness`
 rating.
 */
+
+function cutestCat(cats) {
+  let cutest = 0;
+  let i = 0;
+
+  while (i < cats.length) {
+    const cat = cats[i];
+    if (cat.cuteness > cutest) {
+      cutest = cat;
+    }
+    i++;
+  }
+
+  return cutest;
+}
