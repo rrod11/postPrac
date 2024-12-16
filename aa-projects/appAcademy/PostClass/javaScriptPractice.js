@@ -6281,3 +6281,9 @@ module.exports = operationer;
 //     console.log(`${this.firstName} says hello!`);
 //   }
 // }
+
+/*
+
+Fix the `cutestCat` function. Should return the cat with the highest `cuteness`
+rating.
+*/
