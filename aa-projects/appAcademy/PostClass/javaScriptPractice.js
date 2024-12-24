@@ -6360,3 +6360,5 @@ function addNums(n) {
   }
   return sum;
 }
+
+// Adds up values of addNums(1) through addNums(n)
