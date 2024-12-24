@@ -6385,3 +6385,5 @@ function addNums10(increment) {
   }
   return arr;
 }
+
+// Runs `addManyNums` in 10 increasing increments
