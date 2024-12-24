@@ -6375,3 +6375,4 @@ console.log(shouldRecycle(waterBottle)); // 'Recycle Me!'
 // }
 
 const [addNums, addManyNums] = require("./phase-1");
+// Runs `addNums` in 10 increasing increments
