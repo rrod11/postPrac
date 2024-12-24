@@ -6350,3 +6350,5 @@ const waterBottle = {
 debugger;
 
 console.log(shouldRecycle(waterBottle)); // 'Recycle Me!'
+
+// Adds up positive integers from 1-n
