@@ -6353,23 +6353,25 @@ console.log(shouldRecycle(waterBottle)); // 'Recycle Me!'
 
 // Adds up positive integers from 1-n
 
-function addNums(n) {
-  let sum = 0;
-  for (let i = 1; i <= n; i++) {
-    sum += i;
-  }
-  return sum;
-}
+// function addNums(n) {
+//   let sum = 0;
+//   for (let i = 1; i <= n; i++) {
+//     sum += i;
+//   }
+//   return sum;
+// }
 
-// Adds up values of addNums(1) through addNums(n)
+// // Adds up values of addNums(1) through addNums(n)
 
-function addManyNums(n) {
-  let sum = 0;
-  for (let i = 1; i <= n; i++) {
-    // for (let j = 1; j <= i; j++) {
-    sum += addNums(i);
-    // sum += j;
-    // }
-  }
-  return sum;
-}
+// function addManyNums(n) {
+//   let sum = 0;
+//   for (let i = 1; i <= n; i++) {
+//     // for (let j = 1; j <= i; j++) {
+//     sum += addNums(i);
+//     // sum += j;
+//     // }
+//   }
+//   return sum;
+// }
+
+const [addNums, addManyNums] = require("./phase-1");
