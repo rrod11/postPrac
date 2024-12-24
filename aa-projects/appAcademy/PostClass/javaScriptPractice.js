@@ -6362,3 +6362,14 @@ function addNums(n) {
 }
 
 // Adds up values of addNums(1) through addNums(n)
+
+function addManyNums(n) {
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    // for (let j = 1; j <= i; j++) {
+    sum += addNums(i);
+    // sum += j;
+    // }
+  }
+  return sum;
+}
