@@ -6387,3 +6387,12 @@ function addNums10(increment) {
 }
 
 // Runs `addManyNums` in 10 increasing increments
+
+function addManyNums10(increment) {
+  let arr = [];
+  for (let i = 0; i <= 10 * increment; i += increment) {
+    if (i === 0) continue;
+    arr.push(addManyNums(i));
+  }
+  return arr;
+}
