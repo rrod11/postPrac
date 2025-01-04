@@ -6410,3 +6410,4 @@ function addNums10Timing(increment) {
   }
   return arr;
 }
+// Runs `addManyNums` in 10 increasing increments
