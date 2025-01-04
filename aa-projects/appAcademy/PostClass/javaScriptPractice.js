@@ -6411,3 +6411,15 @@ function addNums10Timing(increment) {
   return arr;
 }
 // Runs `addManyNums` in 10 increasing increments
+
+function addManyNums10Timing(increment) {
+  let arr = [];
+  for (let i = 0; i <= 10 * increment; i += increment) {
+    if (i === 0) continue;
+    startTimer = Date.now();
+    arr.push(addManyNums(i));
+    endTimer = Date.now();
+    console.log(endTimer - startTimer);
+  }
+  return arr;
+}
