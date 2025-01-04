@@ -6426,3 +6426,4 @@ function addManyNums10Timing(increment) {
 
 n = 1000;
 console.log(`addNums(${n}): `);
+console.time("timer1");
