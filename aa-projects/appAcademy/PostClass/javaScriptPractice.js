@@ -6423,3 +6423,6 @@ function addManyNums10Timing(increment) {
   }
   return arr;
 }
+
+n = 1000;
+console.log(`addNums(${n}): `);
