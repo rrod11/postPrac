@@ -6433,3 +6433,4 @@ console.timeEnd("timer1");
 console.log("\n***********\n");
 
 n = 1000;
+console.log(`addManyNums(${n}): `);
