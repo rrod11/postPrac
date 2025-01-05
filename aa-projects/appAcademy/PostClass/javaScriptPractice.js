@@ -6473,3 +6473,5 @@ function swap(arr, index1, index2) {
 }
 
 module.exports = bubbleSort;
+
+// Insertion Sort out-of-place
