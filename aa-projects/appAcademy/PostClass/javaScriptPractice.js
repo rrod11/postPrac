@@ -6437,3 +6437,31 @@ console.log(`addManyNums(${n}): `);
 console.time("timer2");
 addManyNums10Timing(1000);
 console.timeEnd("timer2");
+
+// Count how many animals are in the list
+
+function bubbleSort(arr) {
+  let swapped = true;
+  while (swapped) {
+    swapped = false;
+    for (let i = 0; i < arr.length - 1; i++) {
+      if (arr[i] > arr[i + 1]) {
+        // swap(arr, i, i + 1);
+        [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
+        swapped = true;
+        console.log(arr.join(","));
+      }
+    }
+  }
+  // Iterate through the array
+
+  // If the current value is greater than its neighbor to the right
+  // Swap those values
+
+  // Do not move this console.log
+  return arr;
+
+  // If you get to the end of the array and no swaps have occurred, return
+
+  // Otherwise, repeat from the beginning
+}
