@@ -6431,3 +6431,5 @@ addNums10Timing(10000000);
 console.timeEnd("timer1");
 
 console.log("\n***********\n");
+
+n = 1000;
