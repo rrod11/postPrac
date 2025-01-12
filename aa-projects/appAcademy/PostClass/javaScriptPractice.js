@@ -6525,3 +6525,5 @@ function insertionSort(arr) {
   return sorted;
   //Return the sorted array
 }
+
+// In-place Insertion Sort
