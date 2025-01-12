@@ -6493,4 +6493,35 @@ function insertionSort(arr) {
   - Insert the unsorted value at the break point
   Return the sorted array
   */
+  let array = arr.slice();
+  //Copy the original array
+  let sorted = [];
+  //Create an array to store the sorted values
+  while (array.length) {
+    //While the array is not empty:
+    console.log(sorted.join(","));
+    //- make sure you have a console.log(sorted.join(',')) as your first line in the while loop
+    let val = array.pop();
+    //- Pop a value from the array
+    sorted.push(null);
+    //- Create a new spot at the end of the array with null to help with comparisons
+    let i = sorted.length - 1;
+    //- Walk through the sorted array in reverse order
+    while (i > 0) {
+      // for (let i = sorted.length - 1; i >= 0; i--) {
+      if (sorted[i - 1] < val) {
+        //- Check if the value to the left is smaller than the new value
+        break;
+        //- If so, you've reached the insertion point so exit the loop
+      } else {
+        sorted[i] = sorted[i - 1];
+        //- If not shift the value to the right by 1 and continue
+        i--;
+      }
+    }
+    sorted[i] = val;
+    //- Insert the unsorted value at the break point
+  }
+  return sorted;
+  //Return the sorted array
 }
