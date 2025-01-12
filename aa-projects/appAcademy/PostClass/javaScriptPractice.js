@@ -6528,3 +6528,5 @@ function insertionSort(arr) {
 
 // In-place Insertion Sort
 // Mutates the original array
+
+function insertionSortInPlace(arr) {}
