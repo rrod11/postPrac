@@ -6547,4 +6547,31 @@ function insertionSortInPlace(arr) {
   */
   let divider = 1;
   //Set a pointer dividing the array into sorted and unsorted halves
+
+  while (divider < arr.length) {
+    //Repeat while the unsorted half is not empty:
+    console.log(arr.join(","));
+    //- make sure you have a console.log(sorted.join(',')) as your first line in the while loop
+    const val = arr[divider];
+    //- Grab the first value from the unsorted half
+    let i = divider;
+    //- For each value starting from the divider,
+    while (i > 0) {
+      //- Check if the value to the left is smaller than the unsorted value
+      if (arr[i - 1] <= val) {
+        //- If so, you've reached the insertion point so exit the loop
+        break;
+      } else {
+        arr[i] = arr[i - 1];
+        //- If not shift the value to the right by 1 and continue
+        i--;
+      }
+    }
+    //- Insert the unsorted value at the break point
+    arr[i] = val;
+    divider++;
+    //- Increment the dividing pointer and repeat
+  }
+  return arr;
+  //Return the mutated array
 }
