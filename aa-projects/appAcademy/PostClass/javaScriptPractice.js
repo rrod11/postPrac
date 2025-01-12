@@ -6477,3 +6477,8 @@ module.exports = bubbleSort;
 // Insertion Sort out-of-place
 // Do not modify the original array
 // Do not modify the original array
+function insertionSort(arr) {
+  /*
+  Pseudocode:
+*/
+}
