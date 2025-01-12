@@ -6545,4 +6545,6 @@ function insertionSortInPlace(arr) {
   - Increment the dividing pointer and repeat
   Return the mutated array
   */
+  let divider = 1;
+  //Set a pointer dividing the array into sorted and unsorted halves
 }
